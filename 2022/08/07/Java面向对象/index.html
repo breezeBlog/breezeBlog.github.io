@@ -33,7 +33,9 @@
 
     <script src="/breezeblocg.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 6.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/breezeblocg.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -498,52 +500,14 @@
                 <h1 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h1><p>顾名思义，面向对象，你得首先有个对象，有了对象后，就可以和对象进行互动，所以面向对象编程是<strong>通过对象的方式，把现实世界映射到计算机模型</strong>的一种编程方法；与面向对象编程相反的是面向过程编程，是把模型分解成一步一步的过程</p>
 <h2 id="面向对象基础"><a href="#面向对象基础" class="headerlink" title="面向对象基础"></a>面向对象基础</h2><p>现实世界中，我们定义了“人”这种抽象概念，而具体的人则是“小明”、“小红”、“小军”等一个个具体的人。所以，“人”可以定义为一个<strong>类（class）</strong>，而具体的人则是<strong>实例（instance）</strong></p>
 <p>先仔细看看这简单的段代码吧~ 相信在此框架下，后面学起来更轻松~</p>
-<pre><code class="java">// 定义了一个人类
-public class person&#123;
-    //成员变量
-    String name; //名字
-    int age;  // 年龄
-    
-    //无参构造方法
-    public person()&#123;&#125;
-    //含参数构造方法
-    public person(String name,int age)&#123;
-     this.name = name;
-     this.age = age;
-    &#125;
-    
-    //成员方法
-    public void eat()&#123;
-        System.out.println(this.name+&quot;在&quot;+this.age+&quot;岁就已经学会干饭了&quot;);
-    &#125;
-   
-    public static void main(String[] args)&#123;
-        //无参实例化
-       person p1 = new person();
-       p1.name = &quot;小红&quot;;
-       p1.age = 18;
-       //调用eat方法
-       p1.eat();
-       
-       // 含参实例化
-       person p2 = new person(&quot;小明&quot;,80);
-       //调用eat方法
-       p2.eat();
-    &#125;
- &#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义了一个人类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">person</span>{</span><br><span class="line">    <span class="comment">//成员变量</span></span><br><span class="line">    String name; <span class="comment">//名字</span></span><br><span class="line">    <span class="type">int</span> age;  <span class="comment">// 年龄</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//无参构造方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">person</span><span class="params">()</span>{}</span><br><span class="line">    <span class="comment">//含参数构造方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">person</span><span class="params">(String name,<span class="type">int</span> age)</span>{</span><br><span class="line">     <span class="built_in">this</span>.name = name;</span><br><span class="line">     <span class="built_in">this</span>.age = age;</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//成员方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>{</span><br><span class="line">        System.out.println(<span class="built_in">this</span>.name+<span class="string">"在"</span>+<span class="built_in">this</span>.age+<span class="string">"岁就已经学会干饭了"</span>);</span><br><span class="line">    }</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>{</span><br><span class="line">        <span class="comment">//无参实例化</span></span><br><span class="line">       <span class="type">person</span> <span class="variable">p1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">person</span>();</span><br><span class="line">       p1.name = <span class="string">"小红"</span>;</span><br><span class="line">       p1.age = <span class="number">18</span>;</span><br><span class="line">       <span class="comment">//调用eat方法</span></span><br><span class="line">       p1.eat();</span><br><span class="line">       </span><br><span class="line">       <span class="comment">// 含参实例化</span></span><br><span class="line">       <span class="type">person</span> <span class="variable">p2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">person</span>(<span class="string">"小明"</span>,<span class="number">80</span>);</span><br><span class="line">       <span class="comment">//调用eat方法</span></span><br><span class="line">       p2.eat();</span><br><span class="line">    }</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="1、-类"><a href="#1、-类" class="headerlink" title="1、 类"></a>1、 类</h3><p>class是一种对象模版，<strong>它定义了如何创建实例</strong>，因此，class本身就是一种数据类型</p>
 <h4 id="定义class"><a href="#定义class" class="headerlink" title="定义class"></a>定义class</h4><p>在Java中，创建一个类，例如，给这个类命名为<code>Person</code>，就是定义一个<code>class</code>：</p>
-<pre><code class="java">class Person &#123;
-    public String name;
-    public int age;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> age;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>一个<code>class</code>可以包含多个字段（<code>field</code>），<strong>字段用来描述一个类的特征</strong>，通过class把一组数据汇集到一个对象上，实现了<strong>数据封装</strong></p>
 <h3 id="2、-实例"><a href="#2、-实例" class="headerlink" title="2、 实例"></a>2、 实例</h3><p>instance是根据class创建的实例，<strong>可以创建多个instance，每个instance类型相同，但各自属性可能不相同</strong></p>
 <h4 id="创建实例"><a href="#创建实例" class="headerlink" title="创建实例"></a>创建实例</h4><p>new操作符可以创建一个实例，然后，我们需要定义一个引用类型的变量来指向这个实例，所以是<strong>引用变量<code>ming</code>指向实例<code>new Person()</code></strong>,可以通过这个变量来操作实例</p>
-<pre><code class="java">Person ming = new Person();
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Person</span> <span class="variable">ming</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br></pre></td></tr></tbody></table></figure>
 <p>不同的实例在内存中对应位置不一样哦~</p>
 <h3 id="3、this关键字"><a href="#3、this关键字" class="headerlink" title="3、this关键字"></a>3、this关键字</h3><p>在调用方法的时候，java会自动的把<strong>对象</strong>传递给<strong>方法</strong>， 在方法中由<code>this</code>来接收对象，就和开始所示代码一样；<strong>变量的查找顺序:</strong> 先找自己方法内。如果自己没有，就去<code>this</code>里面找</p>
 <ul>
@@ -557,54 +521,12 @@ public class person&#123;
 <li>private 私有的.</li>
 </ol>
 <h4 id="get-set方法引入"><a href="#get-set方法引入" class="headerlink" title="get set方法引入"></a><code>get</code> <code>set</code>方法引入</h4><p>开始已经说了字段<code>field</code>可以用来用来描述一个类的特征，但是直接把<code>field</code>用<code>public</code>暴露给外部可能会破坏封装性。比如：</p>
-<pre><code class="java">//定义person类
-class Person &#123;
-    public String name;
-    public int age;
-&#125;
-
-//实例化
-Person ming = new Person();
-ming.name = &quot;Xiao Ming&quot;;
-ming.age = -99; // age可以设置为负数 
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义person类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> age;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//实例化</span></span><br><span class="line"><span class="type">Person</span> <span class="variable">ming</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line">ming.name = <span class="string">"Xiao Ming"</span>;</span><br><span class="line">ming.age = -<span class="number">99</span>; <span class="comment">// age可以设置为负数 </span></span><br></pre></td></tr></tbody></table></figure>
 <p>怎么办？使用<strong>private（私有）</strong> 字段</p>
-<pre><code class="java">class Person &#123;
-    private String name;
-    private int age;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p><code>private</code>修饰<code>field</code>，就避免外部代码直接去访问<code>field</code>，那我们要怎么使用这些<code>dield</code>呢？</p>
 <p>我们需要<strong>方法（method）</strong> 来从外部代码间接修改<code>field</code>的值，比如我们使用使用外部方法<code>getName</code>来间接获取<code>private</code>字段的值，再使用<code>setName</code>来检查传入的参数对不对，从而达到筛选的效果</p>
-<pre><code class="java">public class Main &#123;
-    public static void main(String[] args) &#123;
-    //实例化调用
-        Person ming = new Person();
-        ming.setName(&quot;Xiao Ming&quot;); // 设置name
-        ming.setAge(12); // 设置age
-        System.out.println(ming.getName() + &quot;, &quot; + ming.getAge());
-    &#125;
-&#125;
-
-//定义类
-class Person &#123;
-    private String name;
-    private int age;
-
-    public String getName() &#123;
-        return this.name;
-    &#125;
-
-// 在这里我们就筛选出了不能传入name为空的字符串，
-    public void setName(String name) &#123;
-        if (name==null) &#123;
-        //抛出非法或者不合适的这个异常
-            throw new IllegalArgumentException(&quot;invalid name&quot;);
-        &#125;
-        //返回方法值
-        this.name = name; 
-    &#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">    <span class="comment">//实例化调用</span></span><br><span class="line">        <span class="type">Person</span> <span class="variable">ming</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line">        ming.setName(<span class="string">"Xiao Ming"</span>); <span class="comment">// 设置name</span></span><br><span class="line">        ming.setAge(<span class="number">12</span>); <span class="comment">// 设置age</span></span><br><span class="line">        System.out.println(ming.getName() + <span class="string">", "</span> + ming.getAge());</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.name;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在这里我们就筛选出了不能传入name为空的字符串，</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> {</span><br><span class="line">        <span class="keyword">if</span> (name==<span class="literal">null</span>) {</span><br><span class="line">        <span class="comment">//抛出非法或者不合适的这个异常</span></span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>(<span class="string">"invalid name"</span>);</span><br><span class="line">        }</span><br><span class="line">        <span class="comment">//返回方法值</span></span><br><span class="line">        <span class="built_in">this</span>.name = name; </span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
 <p>同理age也可以如此操作，需要注意的是，这个方法相当于被封装在person类里，通过一个类定义方法，就可以给外部暴露一些操作的接口的同时保证自己内部类的统一，我们可以在外部使用<strong>实例变量.方法名(参数);</strong> 来进行调用</p>
 <p>看起来可能会有点麻烦，因为一个成员变量就要两个方法，所以在我们的idea中可以<strong>快捷生成<code>get</code> <code>set</code></strong> 方法 : 空白位置-&gt;右键-&gt; generate -&gt; getter and setter-&gt;全选-&gt; Ok.</p>
 <h4 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h4><p>指的是在创建对象的时候，类自动调用的方法.<br>语法:<br>public类名(传参){<br>}<br>注意:</p>
@@ -616,66 +538,17 @@ class Person &#123;
 <h4 id="构造方法的重载"><a href="#构造方法的重载" class="headerlink" title="构造方法的重载"></a>构造方法的重载</h4><p>构造方法也是方法，也可以进行重载。</p>
 <p><strong>作用:</strong> 可以又更多的方式去创建对象；可以使用this可以访问其他的构造方法 <code>this()</code></p>
 <h4 id="成员方法"><a href="#成员方法" class="headerlink" title="成员方法"></a>成员方法</h4><p>定义方法的语法是：</p>
-<pre><code class="Java">修饰符 方法返回类型 方法名(方法参数列表) &#123;
-    若干方法语句;
-    return 方法返回值;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">修饰符 方法返回类型 方法名(方法参数列表) {</span><br><span class="line">    若干方法语句;</span><br><span class="line">    <span class="keyword">return</span> 方法返回值;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>方法返回值通过<code>return</code>语句实现，如果没有返回值，返回类型设置为<code>void</code>，可以省略<code>return</code></p>
 <p>同样的我们既然有<code>private</code>字段那么也就有<code>private</code>方法，并且<code>private</code>方法不允许外部调用，但是我们可以在privet内部调用<code>private</code>方法</p>
-<pre><code class="java">class Person &#123;
-    private String name;
-    private int birth;
-
-    public void setBirth(int birth) &#123;
-        this.birth = birth;
-    &#125;
-
-    public int getAge() &#123;
-        return calcAge(2019); // 调用private方法
-    &#125;
-
-    // private方法:
-    private int calcAge(int currentYear) &#123;
-        return currentYear - this.birth;
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> birth;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setBirth</span><span class="params">(<span class="type">int</span> birth)</span> {</span><br><span class="line">        <span class="built_in">this</span>.birth = birth;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> {</span><br><span class="line">        <span class="keyword">return</span> calcAge(<span class="number">2019</span>); <span class="comment">// 调用private方法</span></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="comment">// private方法:</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> <span class="title function_">calcAge</span><span class="params">(<span class="type">int</span> currentYear)</span> {</span><br><span class="line">        <span class="keyword">return</span> currentYear - <span class="built_in">this</span>.birth;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="5、静态"><a href="#5、静态" class="headerlink" title="5、静态"></a>5、静态</h3><p>在一个<code>class</code>中定义的字段，我们称之为实例字段，用<code>static</code>修饰的字段，称为静态字段：<code>static field</code>，实例字段在每个实例中都有自己的一个独立“空间”，但是静态字段只有一个共享“空间”</p>
-<pre><code class="java">class Person &#123;
-    public String name;
-    public int age;
-    // 定义静态字段number:
-    public static int number;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> age;</span><br><span class="line">    <span class="comment">// 定义静态字段number:</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> number;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>可以有两者办法使用静态</p>
-<pre><code class="java">//直接通过实例变量访问静态对象
-//所有实例的静态字段都被修改了，原因是静态字段并不属于实例
- hong.number = 99;
- System.out.println(ming.number);
- 
- //通过类名访问静态变量
-Person.number = 99;
-System.out.println(Person.number);
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//直接通过实例变量访问静态对象</span></span><br><span class="line"><span class="comment">//所有实例的静态字段都被修改了，原因是静态字段并不属于实例</span></span><br><span class="line"> hong.number = <span class="number">99</span>;</span><br><span class="line"> System.out.println(ming.number);</span><br><span class="line"> </span><br><span class="line"> <span class="comment">//通过类名访问静态变量</span></span><br><span class="line">Person.number = <span class="number">99</span>;</span><br><span class="line">System.out.println(Person.number);</span><br></pre></td></tr></tbody></table></figure>
 <p>但是不推荐用 <strong><code>实例变量.静态字段</code></strong> 去访问静态字段， 因为在Java程序中，实例对象并没有静态字段 ；实例对象能访问静态字段只是因为编译器可以根据实例类型自动转换为 <strong><code>类名.静态字段</code></strong> 来访问静态对象。所以推荐用类名来访问静态字段。</p>
 <p>因为静态对象会比实例对象更先加载，就和司马迁不能给你编写历史，但是你可以给司马迁编写历史一样：不能够用this去访问实例对象，不能在静态方法里调用非静态方法，可以在静态方法里调用静态方法，也可以用类名来调用静态方法</p>
-<pre><code class="java">public class Main &#123;
-    public static void main(String[] args) &#123;
-        Person.setNumber(99);
-        System.out.println(Person.number);
-    &#125;
-&#125;
-
-class Person &#123;
-    public static int number;
-
-    public static void setNumber(int value) &#123;
-        number = value;
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">        Person.setNumber(<span class="number">99</span>);</span><br><span class="line">        System.out.println(Person.number);</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> number;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">setNumber</span><span class="params">(<span class="type">int</span> value)</span> {</span><br><span class="line">        number = value;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p><strong>特点:</strong> .</p>
 <ol>
 <li>数据共享 (要变一起变)</li>
@@ -688,16 +561,11 @@ class Person &#123;
 <p><strong>不需要导包:</strong></p>
 <ol>
 <li>在自己包里</li>
-<li>java.lang包 下的所有内容都不需要导包 比如：</li>
+<li>java.lang包 下的所有内容都不需要导包 比如： <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String</span><br><span class="line">System.out.println0</span><br></pre></td></tr></tbody></table></figure></li>
 </ol>
-<pre><code class="java">       String
-       System.out.println0
-</code></pre>
 <h3 id="7、继承"><a href="#7、继承" class="headerlink" title="7、继承"></a>7、继承</h3><p>继承:子类可以自动拥有父类中除了私有内容外的其他所有内容.</p>
 <p>当出现x是一种y的时候. x就可以继承y，换句话说就是动物都会叫，猴子是动物，猴子继承了动物会叫的功能，所以猴子会叫</p>
-<pre><code class="java">public class类extends父类&#123;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class类extends父类{</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p><strong>作用:</strong></p>
 <ul>
 <li>简化代码的开发.</li>
@@ -706,32 +574,10 @@ class Person &#123;
 <p>如果父类和子类存在相同属性，子类是如何继承的呢？</p>
 <p>使用<code>super</code>关键字调用父类，使用<code>this</code>关键字调用自己类，在<strong>调用变量</strong>时<code>this</code>关键字是先找自己类，再找父类；</p>
 <p>父类：</p>
-<pre><code class="java">public class Hero &#123;
-  String name = &quot;英雄&quot;
-  public fulei()&#123;
-      System. out. print ln(&quot;我是父类的构造方法&quot;);
-  &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hero</span> {</span><br><span class="line">  <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">"英雄"</span></span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">fulei</span><span class="params">()</span>{</span><br><span class="line">      System. out. print <span class="title function_">ln</span><span class="params">(<span class="string">"我是父类的构造方法"</span>)</span>;</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
 <p>子类：</p>
-<pre><code class="java">public class SunWuKong extends Hero &#123;
-    String name = &quot;孙大圣&quot;;
-  public SunWuKong( ) &#123;
-    super(); // 还原程序，在子 类构造方法的第一行，默认调用父类的构造方法
-    System. out. print ln(&quot;我是子类的构造方法&quot; );
-&#125;
-  public void chi( )&#123;
-    //想看到父类中的name
-    System.out. print Ln(super.name) ;
-    //先找自己类，然后找父类
-    System. out. println( this.name+&quot;在吃桃子&quot;) ;
-&#125;
-  public static void main(String[] args) &#123; 
-    SunWuKong S = new SunWuKong( ) ;
-    S.chi() ;
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SunWuKong</span> <span class="keyword">extends</span> <span class="title class_">Hero</span> {</span><br><span class="line">    <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">"孙大圣"</span>;</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">SunWuKong</span><span class="params">( )</span> {</span><br><span class="line">    <span class="built_in">super</span>(); <span class="comment">// 还原程序，在子 类构造方法的第一行，默认调用父类的构造方法</span></span><br><span class="line">    System. out. print <span class="title function_">ln</span><span class="params">(<span class="string">"我是子类的构造方法"</span> )</span>;</span><br><span class="line">}</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">chi</span><span class="params">( )</span>{</span><br><span class="line">    <span class="comment">//想看到父类中的name</span></span><br><span class="line">    System.out. print <span class="title function_">Ln</span><span class="params">(<span class="built_in">super</span>.name)</span> ;</span><br><span class="line">    <span class="comment">//先找自己类，然后找父类</span></span><br><span class="line">    System. out. println( <span class="built_in">this</span>.name+<span class="string">"在吃桃子"</span>) ;</span><br><span class="line">}</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> { </span><br><span class="line">    <span class="type">SunWuKong</span> <span class="variable">S</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SunWuKong</span>( ) ;</span><br><span class="line">    S.chi() ;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p><strong>调用方法</strong>时一般默认在子类的第一个构造方法里最先使用<code>super()</code>调用父类的<em><strong>无参构造方法</strong></em>，所以可以不写<code>super()</code>调用父类的无参构造方法，但是对于<em><strong>含参构造方</strong></em>法，就需要在子类中使用<code>super(参数)</code>调用父类的含参构造方法，不然就会报错</p>
 <p>那如果子类不满意继承来的方法怎么办呢？</p>
 <h3 id="8、重写"><a href="#8、重写" class="headerlink" title="8、重写"></a>8、重写</h3><p><strong>方法的重写</strong>，也即是子类对父类中提供的方法进行重新定义 <strong>语法:</strong> 子类和父类中的方法的声明完全一致，重写又被称为<strong>方法的覆盖</strong>； 如果子类想在重写的方法中使用父类原本的方法仍然可以使用<code>super.方法名()</code>的形式去调用，这种既重写了方法又调用了原方法叫做<strong>半盖</strong></p>
@@ -741,85 +587,20 @@ class Person &#123;
 <p><strong>举个例子：</strong> 假如有三个动物，猫、狗、鸡，猫吃鱼、狗啃骨头、鸡啄米，现在有一个人，这个人要在早晨去喂这三个动物，应该怎么写呢？</p>
 <p>因为多态比较难一点所以就写详细一点</p>
 <p>动物：</p>
-<pre><code class="java">public class Animal &#123;
-    public void eat()&#123;
-        System.out.println(&quot;动物会进食&quot;);
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Animal</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>{</span><br><span class="line">        System.out.println(<span class="string">"动物会进食"</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>猫：</p>
-<pre><code class="java">public class Cat extends Animal &#123;
-    public void eat()&#123;
-        System.out.println(&quot;猫吃鱼&quot;);
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Cat</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>{</span><br><span class="line">        System.out.println(<span class="string">"猫吃鱼"</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>狗：</p>
-<pre><code class="java">public class Dog extends  Animal &#123;
-    public void eat()&#123;
-        System.out.println(&quot;狗啃骨头&quot;);
-    &#125;
-    
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span>  <span class="title class_">Animal</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>{</span><br><span class="line">        System.out.println(<span class="string">"狗啃骨头"</span>);</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>鸡：</p>
-<pre><code class="java">public class Chicken extends Animal &#123;
-    public void eat()&#123;
-        System.out.println(&quot;鸡啄米&quot;);
-    &#125;
-    public void dance()&#123;
-    System.out.println(&quot;练习时常两年半的舞蹈鸡&quot;);
-&#125;
-
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Chicken</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>{</span><br><span class="line">        System.out.println(<span class="string">"鸡啄米"</span>);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">dance</span><span class="params">()</span>{</span><br><span class="line">    System.out.println(<span class="string">"练习时常两年半的舞蹈鸡"</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>人：</p>
-<pre><code class="java">public class Person &#123;
-    public void feedanimal(Animal ain)&#123;
-        System.out.print(&quot;人在喂&quot;);
-        ain.eat();
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">feedanimal</span><span class="params">(Animal ain)</span>{</span><br><span class="line">        System.out.print(<span class="string">"人在喂"</span>);</span><br><span class="line">        ain.eat();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>场景：</p>
-<pre><code class="java">public class Scenario &#123;
-    public static void main(String[] args) &#123;
-        // 实例化  向上转型
-        Animal ain1 = new Cat();
-        Animal ain2 = new Chicken();
-        Animal ain3 = new Dog();
-        Person p = new Person();
-
-        System.out.println(&quot;在一个早晨&quot;);
-        p.feedanimal(ain1);
-        p.feedanimal(ain2);
-        p.feedanimal(ain3);
-        
-        /*
-        在早晨
-        人在喂猫吃鱼
-        人在喂鸡啄米
-        人在喂狗啃骨头
-        */
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Scenario</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">        <span class="comment">// 实例化  向上转型</span></span><br><span class="line">        <span class="type">Animal</span> <span class="variable">ain1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">ain2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Chicken</span>();</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">ain3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        <span class="type">Person</span> <span class="variable">p</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"在一个早晨"</span>);</span><br><span class="line">        p.feedanimal(ain1);</span><br><span class="line">        p.feedanimal(ain2);</span><br><span class="line">        p.feedanimal(ain3);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        在早晨</span></span><br><span class="line"><span class="comment">        人在喂猫吃鱼</span></span><br><span class="line"><span class="comment">        人在喂鸡啄米</span></span><br><span class="line"><span class="comment">        人在喂狗啃骨头</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>可以看出人在喂的时候只喂了动物，而不是把猫狗鸡都一个一个挨着喂，是因为猫狗鸡和动物有一个继承关系，并且我们在实例化的时候把<strong>子类对象赋值给了父类变量</strong>，相对于把子类们都统一到了父类里，其实这就是多态的体现，我们把这叫做<strong>向上转型</strong> ，但是不难看出，鸡还有跳舞的功能被屏蔽了， 因为向上转型会<strong>屏蔽掉子类不同于父类的方法</strong></p>
 <p>有向上转型就有向下转型，我们把<strong>父类的变量转化回子类的变量</strong>就叫做<strong>向下转型</strong>，向下转型有可能有风险. java要求必须要写强制类型转换(转换之后的数据类型)变量</p>
-<pre><code class="JAVA">public class Scenario &#123;
-    public static void main(String[] args) &#123;
-        Animal ain2 = new Chicken();
-        
-        Chicken c = (Chicken) ain2;
-        c.dance();
-        c.eat();
-      /*
-      练习时常两年半的舞蹈鸡
-      鸡啄米
-        */        
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Scenario</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">ain2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Chicken</span>();</span><br><span class="line">        </span><br><span class="line">        <span class="type">Chicken</span> <span class="variable">c</span> <span class="operator">=</span> (Chicken) ain2;</span><br><span class="line">        c.dance();</span><br><span class="line">        c.eat();</span><br><span class="line">      <span class="comment">/*</span></span><br><span class="line"><span class="comment">      练习时常两年半的舞蹈鸡</span></span><br><span class="line"><span class="comment">      鸡啄米</span></span><br><span class="line"><span class="comment">        */</span>        </span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="10、final"><a href="#10、final" class="headerlink" title="10、final"></a>10、final</h3><ul>
 <li>被<code>fina</code>l修饰的变量不可以被改变，又被称为常量</li>
 <li>被<code>final</code>修饰的方法不可以被重写.</li>
@@ -853,46 +634,18 @@ class Person &#123;
 <li>引用数据类型: null，null表示空,什么都没有.占位.</li>
 </ol>
 <h3 id="14、toString"><a href="#14、toString" class="headerlink" title="14、toString"></a>14、toString</h3><p>默认的toString() -&gt;包+ 类@内存地址</p>
-<pre><code class="java">package com.xyq.entity;
-public class Cat &#123;
-    //类默认继承Object
-    String name;
-    String color ;
-    public Cat(String name, String color)&#123;
-        this.name = name;
-        this.color = color;
-    &#125;
-    public static void main(String[] args) &#123;
-        Cat C = new Cat( name:&quot;小花&quot;， color: &quot;绿色&quot;);
-    //直接打印这个
-    System.out.println(c) ; //输出 com.xyq.entity.Cat@47d384ee
-    //默认打印对象，自动的执行这个对象中的toString( )方法
-    System.out.println(c.toString()) ; //也输出 com.xyq.entity.Cat@47d384ee
-    &#125;    
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.xyq.entity;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Cat</span> {</span><br><span class="line">	<span class="comment">//类默认继承Object</span></span><br><span class="line">	String name;</span><br><span class="line">	String color ;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">Cat</span><span class="params">(String name, String color)</span>{</span><br><span class="line">		<span class="built_in">this</span>.name = name;</span><br><span class="line">		<span class="built_in">this</span>.color = color;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">		<span class="type">Cat</span> <span class="variable">C</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>( name:<span class="string">"小花"</span>， color: <span class="string">"绿色"</span>);</span><br><span class="line">    <span class="comment">//直接打印这个</span></span><br><span class="line">    System.out.println(c) ; <span class="comment">//输出 com.xyq.entity.Cat@47d384ee</span></span><br><span class="line">    <span class="comment">//默认打印对象，自动的执行这个对象中的toString( )方法</span></span><br><span class="line">    System.out.println(c.toString()) ; <span class="comment">//也输出 com.xyq.entity.Cat@47d384ee</span></span><br><span class="line">    }    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>很明显我们对父类Stirng里的toString方法并不满意，那么我们可以重写这个方法(上面有)</p>
 <h3 id="15、instanceof"><a href="#15、instanceof" class="headerlink" title="15、instanceof"></a>15、instanceof</h3><p>判断xxx对象是否是xxx类型的</p>
-<pre><code class="java">public class Cat extends Anima 1 &#123;
-    public static void main(String[] args) &#123;
-        Animal ani = new Animal( ) ;
-        if(ani instanceof Cat)&#123;
-           System. ou.println(&quot;是一只猫。撸一撸&quot;);
-        &#125; else
-        &#123;
-               System. out.pr intln(&quot;不是一只猫&quot;);
-        &#125;
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Cat</span> <span class="keyword">extends</span> <span class="title class_">Anima</span> <span class="number">1</span> {</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line">		<span class="type">Animal</span> <span class="variable">ani</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Animal</span>( ) ;</span><br><span class="line">		<span class="keyword">if</span>(ani <span class="keyword">instanceof</span> Cat){</span><br><span class="line">		   System. ou.println(<span class="string">"是一只猫。撸一撸"</span>);</span><br><span class="line">		} <span class="keyword">else</span></span><br><span class="line">		{</span><br><span class="line">	           System. out.pr <span class="title function_">intln</span><span class="params">(<span class="string">"不是一只猫"</span>)</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="16、内存分析"><a href="#16、内存分析" class="headerlink" title="16、内存分析"></a>16、内存分析</h3><ol>
 <li><strong>堆</strong>：主要存放对象.</li>
 <li><strong>栈</strong>：局部变量，以及基本数据类型的变量.</li>
 <li><strong>代码区</strong>：类和方法</li>
 <li><strong>数据区</strong>：常量池和静态变量</li>
 </ol>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12t411u726?spm_id_from=333.337.search-card.all.click&vd_source=56da61c042e408be6a5e17b6d730d6a8">jvm内存模型全面解析</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pJ411y7UK?p=28&vd_source=56da61c042e408be6a5e17b6d730d6a8">参数传递内存分析</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12t411u726?spm_id_from=333.337.search-card.all.click&amp;vd_source=56da61c042e408be6a5e17b6d730d6a8">jvm内存模型全面解析</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pJ411y7UK?p=28&amp;vd_source=56da61c042e408be6a5e17b6d730d6a8">参数传递内存分析</a></p>
 
                 
             </div>
