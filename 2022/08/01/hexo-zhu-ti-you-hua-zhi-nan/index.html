@@ -4,10 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="常用git指令, Breeze">
-    <meta name="description" content="git指令随手记我每天使用 Git ，但是很多命令记不住。
-一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
-1、新建代码库12345678# 在当前目录新建一个Git代码库$ git init">
+    <meta name="keywords" content="hexo主题优化指南, Breeze">
+    <meta name="description" content="Front-matter 选项详解选项中的所有内容均为非必填的。但我仍然建议至少填写 title 和 date 的值。
+
+
+
+注意:
+如果 img 属性不填写的话，文章特色图会根据文章标题的 hashcode 的值取余，然后选取主题中对应的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,22 +24,22 @@
 
     
 
-    <title>常用git指令 | Breeze</title>
-    <link rel="icon" type="image/png" href="/breezeblocg.gitee.io/favicon.png">
+    <title>hexo主题优化指南 | Breeze</title>
+    <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/css/my.css">
 
-    <script src="/breezeblocg.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/breezeblocg.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/breezeblog.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -44,9 +47,9 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+                <a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
                     
-                    <img src="/breezeblocg.gitee.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/breezeblog.gitee.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Breeze</span>
                 </a>
@@ -58,7 +61,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
@@ -80,7 +83,7 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/breezeblocg.gitee.io/tags">
+        <a href="/breezeblog.gitee.io/tags">
           
           <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -89,7 +92,7 @@
       </li>
       
       <li>
-        <a href="/breezeblocg.gitee.io/categories">
+        <a href="/breezeblog.gitee.io/categories">
           
           <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -98,7 +101,7 @@
       </li>
       
       <li>
-        <a href="/breezeblocg.gitee.io/archives">
+        <a href="/breezeblog.gitee.io/archives">
           
           <i class="fas fa-archive" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -112,7 +115,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/about" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/about" class="waves-effect waves-light">
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
@@ -123,7 +126,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/friends" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
@@ -144,7 +147,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/breezeblocg.gitee.io/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/breezeblog.gitee.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Breeze</div>
         <div class="logo-desc">
@@ -158,7 +161,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
@@ -180,7 +183,7 @@
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/tags " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/tags " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
 			      
@@ -190,7 +193,7 @@
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/categories " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/categories " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
 			      
@@ -200,7 +203,7 @@
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/archives " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/archives " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-archive" style="position: absolute;left:50px" ></i>
 			      
@@ -214,7 +217,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/about" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/about" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
@@ -225,7 +228,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/friends" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
@@ -310,14 +313,14 @@
 </header>
 
     
-<script src="/breezeblocg.gitee.io/libs/cryptojs/crypto-js.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
-                location.href = '/breezeblocg.gitee.io/';
+                location.href = '/breezeblog.gitee.io/';
             }
         }
     })();
@@ -326,12 +329,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblocg.gitee.io/medias/featureimages/git.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/nicehexo.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">常用git指令</h1>
+                    <h1 class="description center-align post-title">hexo主题优化指南</h1>
                 </div>
             </div>
         </div>
@@ -344,7 +347,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/breezeblocg.gitee.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/breezeblog.gitee.io/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -447,8 +450,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/breezeblocg.gitee.io/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/breezeblog.gitee.io/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -459,7 +462,7 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/breezeblocg.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
                                 笔记
                             </a>
                         
@@ -472,14 +475,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-31
+                    2022-08-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-03
+                    2022-08-23
                 </div>
                 
 
@@ -498,22 +501,34 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="git指令随手记"><a href="#git指令随手记" class="headerlink" title="git指令随手记"></a>git指令随手记</h2><p>我每天使用 Git ，但是很多命令记不住。</p>
-<p>一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e22f0ebf846244939822ce9dd607d78a~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<h3 id="1、新建代码库"><a href="#1、新建代码库" class="headerlink" title="1、新建代码库"></a>1、新建代码库</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载一个项目和它的整个代码历史</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="2、配置"><a href="#2、配置" class="headerlink" title="2、配置"></a>2、配置</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示当前的Git配置</span></span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 编辑Git配置文件</span></span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置提交代码时的用户信息</span></span><br><span class="line">$ git config [--global] user.name <span class="string">"[name]"</span></span><br><span class="line">$ git config [--global] user.email <span class="string">"[email address]"</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="3、增加-x2F-删除文件"><a href="#3、增加-x2F-删除文件" class="headerlink" title="3、增加/删除文件"></a>3、增加/删除文件</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加指定文件到暂存区</span></span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加指定目录到暂存区，包括子目录</span></span><br><span class="line">$ git add [<span class="built_in">dir</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加当前目录的所有文件到暂存区</span></span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加每个变化前，都会要求确认</span></span><br><span class="line"><span class="comment"># 对于同一个文件的多处变化，可以实现分次提交</span></span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并且将这次删除放入暂存区</span></span><br><span class="line">$ git <span class="built_in">rm</span> [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止追踪指定文件，但该文件会保留在工作区</span></span><br><span class="line">$ git <span class="built_in">rm</span> --cached [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 改名文件，并且将这个改名放入暂存区</span></span><br><span class="line">$ git <span class="built_in">mv</span> [file-original] [file-renamed]</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="4、代码提交"><a href="#4、代码提交" class="headerlink" title="4、代码提交"></a>4、代码提交</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到仓库区</span></span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到仓库区</span></span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交工作区自上次commit之后的变化，直接到仓库区</span></span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交时显示所有diff信息</span></span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用一次新的commit，替代上一次提交</span></span><br><span class="line"><span class="comment"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span></span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重做上一次commit，并包括指定文件的新变化</span></span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="5、分支"><a href="#5、分支" class="headerlink" title="5、分支"></a>5、分支</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列出所有本地分支</span></span><br><span class="line">$ git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有远程分支</span></span><br><span class="line">$ git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有本地分支和远程分支</span></span><br><span class="line">$ git branch -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但依然停留在当前分支</span></span><br><span class="line">$ git branch [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，并切换到该分支</span></span><br><span class="line">$ git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，指向指定commit</span></span><br><span class="line">$ git branch [branch] [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，与指定的远程分支建立追踪关系</span></span><br><span class="line">$ git branch --track [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支，并更新工作区</span></span><br><span class="line">$ git checkout [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到上一个分支</span></span><br><span class="line">$ git checkout -</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建立追踪关系，在现有分支与指定的远程分支之间</span></span><br><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 选择一个commit，合并进当前分支</span></span><br><span class="line">$ git cherry-pick [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote/branch]</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="6、标签"><a href="#6、标签" class="headerlink" title="6、标签"></a>6、标签</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列出所有tag</span></span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个tag在当前commit</span></span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个tag在指定commit</span></span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地tag</span></span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程tag</span></span><br><span class="line">$ git push origin :refs/tags/[tagName]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看tag信息</span></span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交指定tag</span></span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交所有tag</span></span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，指向某个tag</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="7、查看信息"><a href="#7、查看信息" class="headerlink" title="7、查看信息"></a>7、查看信息</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示有变更的文件</span></span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示当前分支的版本历史</span></span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示commit历史，以及每次commit发生变更的文件</span></span><br><span class="line">$ git <span class="built_in">log</span> --<span class="built_in">stat</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 搜索提交历史，根据关键词</span></span><br><span class="line">$ git <span class="built_in">log</span> -S [keyword]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个commit之后的所有变动，每个commit占据一行</span></span><br><span class="line">$ git <span class="built_in">log</span> [tag] HEAD --pretty=format:%s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件</span></span><br><span class="line">$ git <span class="built_in">log</span> [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个文件的版本历史，包括文件改名</span></span><br><span class="line">$ git <span class="built_in">log</span> --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示指定文件相关的每一次diff</span></span><br><span class="line">$ git <span class="built_in">log</span> -p [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示过去5次提交</span></span><br><span class="line">$ git <span class="built_in">log</span> -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有提交过的用户，按提交次数排序</span></span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示指定文件是什么人在什么时间修改过</span></span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示暂存区和工作区的差异</span></span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示暂存区和上一个commit的差异</span></span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示工作区与当前分支最新commit之间的差异</span></span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示两次提交之间的差异</span></span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示今天你写了多少行代码</span></span><br><span class="line">$ git diff --shortstat <span class="string">"@{0 day ago}"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某次提交发生变化的文件</span></span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某次提交时，某个文件的内容</span></span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示当前分支的最近几次提交</span></span><br><span class="line">$ git reflog</span><br></pre></td></tr></tbody></table></figure>
+                <h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p>选项中的所有内容均为非必填的。但我仍然建议至少填写 title 和 date 的值。</p>
+<img src="https://pic.yupoo.com/kalbim/8fe1efcf/48cd56aa.png" width="100%">
+<img src="https://pic.yupoo.com/kalbim/0032ef7d/f77bff9d.png" width="100%">
 
-<h3 id="8、远程同步"><a href="#8、远程同步" class="headerlink" title="8、远程同步"></a>8、远程同步</h3> <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载远程仓库的所有变动</span></span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有远程仓库</span></span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个远程仓库的信息</span></span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定上传仓库位置</span></span><br><span class="line">$ git remote add origin [你远程仓库的url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 增加一个新的远程仓库，并命名</span></span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 取回远程仓库的变化，并与本地分支合并</span></span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 上传本地指定分支到远程仓库</span></span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有分支到远程仓库</span></span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="9、撤销"><a href="#9、撤销" class="headerlink" title="9、撤销"></a>9、撤销</h3> <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 恢复暂存区的指定文件到工作区</span></span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复某个commit的指定文件到暂存区和工作区</span></span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复暂存区的所有文件到工作区</span></span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span></span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区与工作区，与上一次commit保持一致</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span></span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span></span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span></span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个commit，用来撤销指定commit</span></span><br><span class="line"><span class="comment"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span></span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 暂时将未提交的变化移除，稍后再移入</span></span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="10、其他"><a href="#10、其他" class="headerlink" title="10、其他"></a>10、其他</h3> <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成一个可供发布的压缩包</span></span><br><span class="line">$ git archive</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>文档借鉴自大佬：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">阮一峰</a></p>
+<p><strong>注意:</strong></p>
+<p>如果 img 属性不填写的话，文章特色图会根据文章标题的 hashcode 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章都的特色图各有特色。<br>date 的值尽量保证每篇文章是唯一的，因为本主题中 Gitalk 和 Gitment 识别 id 是通过 date 的值来作为唯一标识的。<br>如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 _config.yml 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：开源中国在线工具、chahuo、站长工具。<br>您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则<br>以下为文章的 Front-matter 示例。</p>
+<p>最简示例</p>
+<pre class=" language-yml"><code class="language-yml">title: typora-vue-theme主题介绍
+date: 2018-09-07 09:25:00
+</code></pre>
+<p>最全示例</p>
+<pre class=" language-yml"><code class="language-yml">title: typora-vue-theme主题介绍
+date: 2018-09-07 09:25:00
+author: 张三
+img: /source/images/xxx.jpg
+top: true
+cover: true
+coverImg: /images/1.jpg
+password: 8d969eef6ecad3c29a3a62928f3ca12020c923adc6c92
+toc: false
+mathjax: false
+summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+categories: Markdown
+tags:
+  - Typora
+  - Markdown
+</code></pre>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p><a target="_blank" rel="noopener" href="https://kaiboshi.gitee.io/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/">详细hexo优化指南参考</a></p>
 
                 
             </div>
@@ -530,7 +545,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/breezeblocg.gitee.io/about" rel="external nofollow noreferrer">Breeze</a>
+                    <a href="/breezeblog.gitee.io/about" rel="external nofollow noreferrer">Breeze</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -540,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblocg.gitee.io/breezeblocg.gitee.io/2022/07/31/%E5%B8%B8%E7%94%A8git%E6%8C%87%E4%BB%A4/">https://breezeblog.gitee.io/breezeblocg.gitee.io/breezeblocg.gitee.io/2022/07/31/%E5%B8%B8%E7%94%A8git%E6%8C%87%E4%BB%A4/</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/08/01/hexo-zhu-ti-you-hua-zhi-nan/">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/08/01/hexo-zhu-ti-you-hua-zhi-nan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -553,7 +568,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/breezeblocg.gitee.io/about" target="_blank">Breeze</a>
+                    <a href="/breezeblog.gitee.io/about" target="_blank">Breeze</a>
                     !
                 </span>
             </div>
@@ -578,20 +593,20 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/breezeblocg.gitee.io/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/breezeblog.gitee.io/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/breezeblocg.gitee.io/libs/share/js/social-share.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -709,10 +724,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/breezeblocg.gitee.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/breezeblog.gitee.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/breezeblocg.gitee.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/breezeblog.gitee.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -750,7 +765,7 @@
 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/breezeblocg.gitee.io/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("/breezeblog.gitee.io/medias/comment_bg.png") 100% 100% no-repeat;
     }
 
     #vcomments p {
@@ -984,23 +999,41 @@
     </div>
 </div>
 
-<script src="/breezeblocg.gitee.io/libs/valine/av-min.js"></script>
-<script src="/breezeblocg.gitee.io/libs/valine/Valine.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/valine/av-min.js"></script>
+<script src="/breezeblog.gitee.io/libs/valine/Valine.min.js"></script>
 <script>
     new Valine({
         el: '#vcomments',
+        admin_email: '16463223@qq.com',
         appId: 'xOyBkAhlIVqKeXW3suetqchh-gzGzoHsz',
         appKey: 'nFuERzsfKn8HGKQSCrnuwvny',
-        serverURLs: 'https://xoybkahl.lc-cn-n1-shared.com',
+        path: window.location.pathname,
+        comment_count: true,
         notify: 'true' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
-        avatar: 'mm',
+        avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '来啊~快活啊~\(≧▽≦\)'
+        placeholder: '来啊~快活啊~\(≧▽≦\)',
+
+    });
+    $(document).ready(function(){
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
     });
 </script>
+
+
 
 <!--酷Q推送-->
 
@@ -1024,12 +1057,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/breezeblocg.gitee.io/2022/07/31/%E5%B8%B8%E7%94%A8hexo%E6%8C%87%E4%BB%A4%E4%B8%8E%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+                <a href="/breezeblog.gitee.io/2022/08/01/git-chang-jian-wen-ti-jie-jue-fang-an/">
                     <div class="card-image">
                         
-                        <img src="/breezeblocg.gitee.io/medias/featureimages/hexo.jpg" class="responsive-img" alt="常用hexo指令与常见问题">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/pgit.jpg" class="responsive-img" alt="git常见问题解决方案">
                         
-                        <span class="card-title">常用hexo指令与常见问题</span>
+                        <span class="card-title">git常见问题解决方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1040,13 +1073,13 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/breezeblocg.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
                                     笔记
                                 </a>
                             
@@ -1057,8 +1090,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblocg.gitee.io/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/breezeblog.gitee.io/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -1072,18 +1105,18 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/breezeblocg.gitee.io/2022/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%B4%E7%BE%8E%E5%A5%BD%E7%9A%84%E6%98%8E%E5%A4%A9/">
+                <a href="/breezeblog.gitee.io/2022/07/31/chang-yong-hexo-zhi-ling-yu-chang-jian-wen-ti/">
                     <div class="card-image">
                         
-                        <img src="/breezeblocg.gitee.io/medias/featureimages/2.jpg" class="responsive-img" alt="我的第一篇博客——致美好的明天">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/hexo.jpg" class="responsive-img" alt="常用hexo指令与常见问题">
                         
-                        <span class="card-title">我的第一篇博客——致美好的明天</span>
+                        <span class="card-title">常用hexo指令与常见问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            温馨提示，此文章需要密码
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -1094,8 +1127,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/breezeblocg.gitee.io/categories/daily/" class="post-category">
-                                    daily
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
@@ -1105,8 +1138,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblocg.gitee.io/tags/%E6%97%A5%E5%B8%B8/">
-                        <span class="chip bg-color">日常</span>
+                    <a href="/breezeblog.gitee.io/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1122,23 +1155,23 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeShrink.js"></script>
 
 
 
@@ -1160,7 +1193,7 @@
 </div>
 
 
-<script src="/breezeblocg.gitee.io/libs/tocbot/tocbot.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1242,13 +1275,14 @@
             
                 <span id="year">2022</span>
             
-            <a href="/breezeblocg.gitee.io/about" target="_blank">风</a>    
+            <a href="/breezeblog.gitee.io/about" target="_blank">风</a>    
             <br>
             
             
             
             
-            
+
+
             <br>
 
             <!-- 运行天数提醒. -->
@@ -1331,9 +1365,30 @@
 
 </div>
     </div>
-</footer>
+    <script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
 <div class="progress-bar"></div>
+</footer>
+
+
 
 
     <!-- 搜索遮罩框 -->
@@ -1436,7 +1491,7 @@ $(function () {
         });
     };
 
-    searchFunc('/breezeblocg.gitee.io/search.xml', 'searchInput', 'searchResult');
+    searchFunc('/breezeblog.gitee.io/search.xml', 'searchInput', 'searchResult');
 });
 </script>
 
@@ -1448,12 +1503,12 @@ $(function () {
 </div>
 
 
-    <script src="/breezeblocg.gitee.io/libs/materialize/materialize.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/aos/aos.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/breezeblocg.gitee.io/js/matery.js"></script>
+    <script src="/breezeblog.gitee.io/libs/materialize/materialize.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/aos/aos.js"></script>
+    <script src="/breezeblog.gitee.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/breezeblog.gitee.io/js/matery.js"></script>
 
     
 
@@ -1467,7 +1522,7 @@ $(function () {
 
      
         <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/breezeblocg.gitee.io/libs/others/TencentCaptcha.js"></script>
+        <script src="/breezeblog.gitee.io/libs/others/TencentCaptcha.js"></script>
         <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
@@ -1502,7 +1557,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.6'
         zIndex="-1" count="99"
-        src="/breezeblocg.gitee.io/libs/background/canvas-nest.js"></script>
+        src="/breezeblog.gitee.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1510,7 +1565,7 @@ $(function () {
     
 
     
-    <script src="/breezeblocg.gitee.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/breezeblog.gitee.io/libs/instantpage/instantpage.js" type="module"></script>
     
    
 

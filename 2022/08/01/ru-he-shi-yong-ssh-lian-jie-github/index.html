@@ -4,11 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="iDea常用快捷键, Breeze">
-    <meta name="description" content="整理了一些IDEA开发常用的快捷键：
-快捷键组合	实现效果
-psvm + Tab键 / main + Tab键	public static void main(String[] args)
-sout + Tab键	System.out.pr">
+    <meta name="keywords" content="如何使用ssh链接github, Breeze">
+    <meta name="description" content="创建一个 SSH key详细过程转自：https://www.cnblogs.com/ayseeing/p/3572582.html
+1、github管理项目的时候，可以直接使用https url克隆到本地，当然也可以使用 SSH url ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,22 +20,22 @@ sout + Tab键	System.out.pr">
 
     
 
-    <title>iDea常用快捷键 | Breeze</title>
-    <link rel="icon" type="image/png" href="/breezeblocg.gitee.io/favicon.png">
+    <title>如何使用ssh链接github | Breeze</title>
+    <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/css/my.css">
 
-    <script src="/breezeblocg.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/breezeblocg.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/breezeblog.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -45,9 +43,9 @@ sout + Tab键	System.out.pr">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+                <a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
                     
-                    <img src="/breezeblocg.gitee.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/breezeblog.gitee.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Breeze</span>
                 </a>
@@ -59,7 +57,7 @@ sout + Tab键	System.out.pr">
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
@@ -81,7 +79,7 @@ sout + Tab键	System.out.pr">
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/breezeblocg.gitee.io/tags">
+        <a href="/breezeblog.gitee.io/tags">
           
           <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -90,7 +88,7 @@ sout + Tab键	System.out.pr">
       </li>
       
       <li>
-        <a href="/breezeblocg.gitee.io/categories">
+        <a href="/breezeblog.gitee.io/categories">
           
           <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -99,7 +97,7 @@ sout + Tab键	System.out.pr">
       </li>
       
       <li>
-        <a href="/breezeblocg.gitee.io/archives">
+        <a href="/breezeblog.gitee.io/archives">
           
           <i class="fas fa-archive" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -113,7 +111,7 @@ sout + Tab键	System.out.pr">
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/about" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/about" class="waves-effect waves-light">
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
@@ -124,7 +122,7 @@ sout + Tab键	System.out.pr">
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/friends" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
@@ -145,7 +143,7 @@ sout + Tab键	System.out.pr">
 
     <div class="mobile-head bg-color">
         
-        <img src="/breezeblocg.gitee.io/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/breezeblog.gitee.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Breeze</div>
         <div class="logo-desc">
@@ -159,7 +157,7 @@ sout + Tab键	System.out.pr">
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
@@ -181,7 +179,7 @@ sout + Tab键	System.out.pr">
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/tags " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/tags " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
 			      
@@ -191,7 +189,7 @@ sout + Tab键	System.out.pr">
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/categories " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/categories " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
 			      
@@ -201,7 +199,7 @@ sout + Tab键	System.out.pr">
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/archives " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/archives " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-archive" style="position: absolute;left:50px" ></i>
 			      
@@ -215,7 +213,7 @@ sout + Tab键	System.out.pr">
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/about" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/about" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
@@ -226,7 +224,7 @@ sout + Tab键	System.out.pr">
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/friends" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
@@ -311,14 +309,14 @@ sout + Tab键	System.out.pr">
 </header>
 
     
-<script src="/breezeblocg.gitee.io/libs/cryptojs/crypto-js.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
-                location.href = '/breezeblocg.gitee.io/';
+                location.href = '/breezeblog.gitee.io/';
             }
         }
     })();
@@ -327,12 +325,12 @@ sout + Tab键	System.out.pr">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblocg.gitee.io/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/git.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">iDea常用快捷键</h1>
+                    <h1 class="description center-align post-title">如何使用ssh链接github</h1>
                 </div>
             </div>
         </div>
@@ -345,7 +343,7 @@ sout + Tab键	System.out.pr">
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/breezeblocg.gitee.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/breezeblog.gitee.io/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -446,12 +444,25 @@ sout + Tab键	System.out.pr">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/breezeblog.gitee.io/tags/git/">
+                                <span class="chip bg-color">git</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -460,14 +471,14 @@ sout + Tab键	System.out.pr">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-07
+                    2022-08-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-07
+                    2022-08-23
                 </div>
                 
 
@@ -486,89 +497,70 @@ sout + Tab键	System.out.pr">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>整理了一些IDEA开发常用的快捷键：</p>
-<p>快捷键组合	实现效果</p>
-<p>psvm + Tab键 / main + Tab键	public static void main(String[] args)</p>
-<p>sout + Tab键	System.out.println()</p>
-<p>Ctrl + X	删除当前行</p>
-<p>Ctrl +D	复制当前行</p>
-<p>Alt+Insert(或右键Generate)	生成代码(如get,set方法,构造函数等)</p>
-<p>Ctrl+Alt+T	生成try catch （或者 Alt+enter选择）</p>
-<p>CTRL+ALT+T	把选中的代码放在 TRY{} IF{} ELSE{} 里</p>
-<p>Ctr+shift+U	实现大小写之间的转化</p>
-<p>ALT+回车	导入包,自动修正</p>
-<p>CTRL+ALT+L	格式化代码</p>
-<p>CTRL+ALT+I	自动缩进</p>
-<p>CTRL+E	最近更改的代码</p>
-<p>fori	生成for (int i = 0; i &lt; ; i++) {}</p>
-<p>Alt + &lt;–左右–&gt;键	实现窗口左右更换（多窗口）</p>
-<p>Ctrl + 鼠标点击	快速找到成员变量的出处</p>
-<p>Shift+F6	重构/重命名 (包、类、方法、变量、甚至注释等)</p>
-<p>CTRL+Q	查看当前方法的声明</p>
-<p>Ctrl+Alt+V	自动创建变量（new 对象();之后选择按快捷键）</p>
-<p>Ctrl+O	重写方法</p>
-<p>Ctrl+I	实现方法</p>
-<p>ALT+/	代码提示</p>
-<p>Ctrl+Shift+R	在当前项目中替换指定内容</p>
-<p>Ctrl+E	最近编辑的文件列表</p>
-<p>Ctrl+P	显示方法参数信息</p>
-<p>Ctrl+Shift+Insert	查看历史复制记录，idea可以保留历史复制的 100 条记录</p>
-<p>控制台语句 System.out 相关：</p>
-<p>生成控制台的相关快捷键	描述</p>
-<p>sout + Tab键	生成System.out.println();，输出到控制台语句并换行。</p>
-<p>souf + Tab键	生成System.out.printf(“”);,输出一个格式化字符串到控制台。</p>
-<p>soutm + Tab键	生成System.out.println(“类名.方法名”);，输出当前 类和方法名 到控制台。</p>
-<p>soutp + Tab键	生成System.out.println(所有方法参数名+值);，输出当前 方法的参数名和值 到控制台。</p>
-<p>————————————–日常使用 必备快捷键—————————————</p>
-<p>查找</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + F	在当前文件进行文本查找</p>
-<p>Ctrl + R	在当前文件进行文本替换</p>
-<p>Shift + Ctrl + F	在项目进行文本查找</p>
-<p>Shift + Ctrl + R	在项目进行文本替换</p>
-<p>Shift + Shift	快速搜索</p>
-<p>Ctrl + N	查找class</p>
-<p>Ctrl + Shift + N	查找文件</p>
-<p>Ctrl + Shift + Alt + N	查找symbol（查找某个方法名）</p>
-<p>跳转切换</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + E	最近文件</p>
-<p>Ctrl + Tab	切换文件</p>
-<p>Ctrl + Alt + ←/→	跳转历史光标所在处</p>
-<p>Alt + ←/→ 方向键	切换子tab</p>
-<p>Ctrl + G	go to（跳转指定行号）</p>
-<p>编码相关</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + W	快速选中</p>
-<p>(Shift + Ctrl) + Alt + J	快速选中同文本</p>
-<p>Ctrl + C/Ctrl + X/Ctrl + D	快速复制或剪切</p>
-<p>多行选中 Tab / Shift + Tab	tab</p>
-<p>Ctrl + Y	删除整行</p>
-<p>滚轮点击变量/方法/类	快速进入变量/方法/类的定义处</p>
-<p>Shift + 点击Tab	快速关闭tab</p>
-<p>Ctrl + Z 、Ctrl + Shift + Z	后悔药，撤销/取消撤销</p>
-<p>Ctrl + Shift + enter	自动收尾，代码自动补全</p>
-<p>Alt + enter	IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同</p>
-<p>Alt + ↑/↓	方法快速跳转</p>
-<p>F2	跳转到下一个高亮错误 或 警告位置</p>
-<p>Alt + Insert	代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等</p>
-<p>Ctrl + Shift + L	格式化代码</p>
-<p>Shift + F6	快速修改方法名、变量名、文件名、类名等</p>
-<p>Ctrl + F6	快速修改方法签名</p>
-<p>代码阅读相关</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + P	方法参数提示显示</p>
-<p>Ctrl + Shift + i	就可以在当前类里再弹出一个窗口出来</p>
-<p>Alt + F7	可以列出变量在哪些地方被使用了</p>
-<p>光标在子类接口名，Ctrl + u	跳到父类接口</p>
-<p>Alt + F1 + 1， esc</p>
-<p>(Shift) + Ctrl + +/-	代码块折叠</p>
-<p>Ctrl + Shift + ←/→	移动窗口分割线</p>
-<p>Ctrl + (Alt) + B	跳转方法定义/实现</p>
-<p>Ctrl + H	类的层级关系</p>
-<p>Ctrl + F12	Show Members 类成员快速显示<br>版本管理相关</p>
-<p>快捷键	介绍<br>Ctrl + D	Show Diff</p>
-<p>(Shift) + F7	（上）下一处修改</p>
+                <h1 id="创建一个-SSH-key详细过程"><a href="#创建一个-SSH-key详细过程" class="headerlink" title="创建一个 SSH key详细过程"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yinminbo/p/11810302.html">创建一个 SSH key详细过程</a></h1><p>转自：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ayseeing/p/3572582.html">https://www.cnblogs.com/ayseeing/p/3572582.html</a></p>
+<p>1、github管理项目的时候，可以直接使用https url克隆到本地，当然也可以使用 SSH url 克隆到本地。</p>
+<p>2、复制https url 然后到 git Bash 里面直接用clone命令就可以将repository克隆到本地，而使用 SSH url 克隆却需要在克隆之前先配置和添加好 SSH key 。</p>
+<p>3、如果用户想要使用 SSH url 克隆，就必须是这个项目的拥有者。否则用户是无法添加 SSH key 的。</p>
+<p>&nbsp;</p>
+<p>生成多个公钥请点击：<a target="_blank" rel="noopener" href="http://www.cnblogs.com/ayseeing/p/4445194.html">http://www.cnblogs.com/ayseeing/p/4445194.html</a></p>
+<h2 id="https-和-SSH-的区别："><a href="#https-和-SSH-的区别：" class="headerlink" title="https 和 SSH 的区别："></a>https 和 SSH 的区别：</h2><p>1、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</p>
+<p>2、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</p>
+<p>&nbsp;</p>
+<h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><h4 id="1、首先需要检查你电脑是否已经有-SSH-key"><a href="#1、首先需要检查你电脑是否已经有-SSH-key" class="headerlink" title="1、首先需要检查你电脑是否已经有 SSH key"></a>1、首先需要检查你电脑是否已经有 SSH key</h4><p>运行 git Bash 客户端，输入如下代码：</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> ~/.ssh
+$ <span class="token function">ls</span>
+</code></pre>
+<p>这两个命令就是检查是否已经存在 id_rsa.pub 或 id_dsa.pub 文件，如果文件已经存在，那么你可以跳过步骤2，直接进入步骤3。</p>
+<p>&nbsp;</p>
+<h4 id="2、创建一个-SSH-key"><a href="#2、创建一个-SSH-key" class="headerlink" title="2、创建一个 SSH key"></a>2、创建一个 SSH key</h4><pre class=" language-bash"><code class="language-bash">$ ssh-keygen -t rsa -C <span class="token string">"your_email@example.com"</span>
+</code></pre>
+<p>代码参数含义：</p>
+<p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
+<p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
+<pre class=" language-bash"><code class="language-bash">Generating public/private rsa key pair.
+<span class="token comment" spellcheck="true"># Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span>
+</code></pre>
+<p>当然，你也可以不输入文件名，使用默认文件名（<strong>推荐</strong>），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
+<p>&nbsp;</p>
+<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），</p>
+<p>当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了，如：</p>
+<pre class=" language-bash"><code class="language-bash">Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>: 
+<span class="token comment" spellcheck="true"># Enter same passphrase again:</span>
+</code></pre>
+<p>接下来，就会显示如下代码提示，如：</p>
+<pre class=" language-bash"><code class="language-bash">Your identification has been saved <span class="token keyword">in</span> /c/Users/you/.ssh/id_rsa.
+<span class="token comment" spellcheck="true"># Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.</span>
+<span class="token comment" spellcheck="true"># The key fingerprint is:</span>
+<span class="token comment" spellcheck="true"># 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span>
+</code></pre>
+<p>当你看到上面这段代码的收，那就说明，你的 SSH key 已经创建成功，你只需要添加到github的SSH key上就可以了。</p>
+<p>&nbsp;</p>
+<h4 id="3、添加你的-SSH-key-到-github上面去"><a href="#3、添加你的-SSH-key-到-github上面去" class="headerlink" title="3、添加你的 SSH key 到 github上面去"></a>3、添加你的 SSH key 到 github上面去</h4><p><strong>a、</strong> 首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：</p>
+<pre class=" language-bash"><code class="language-bash">$ clip <span class="token operator">&lt;</span> ~/.ssh/id_rsa.pub
+</code></pre>
+<p><strong>b、</strong> 登录你的github账号，从又上角的设置（&nbsp;<a target="_blank" rel="noopener" href="https://github.com/settings">Account Settings</a>&nbsp;）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。</p>
+<p><strong>c、</strong> 点击 Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。当然，上面的 Title 所对应的输入框你也可以输入一个该 SSH key 显示在 github 上的一个别名。默认的会使用你的邮件名称。</p>
+<p>&nbsp;</p>
+<h3 id="4、测试一下该SSH-key"><a href="#4、测试一下该SSH-key" class="headerlink" title="4、测试一下该SSH key"></a>4、测试一下该SSH key</h3><p>在git Bash 中输入以下代码</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">ssh</span> -T git@github.com
+</code></pre>
+<p>当你输入以上代码时，会有一段警告代码，如：</p>
+<pre class=" language-bash"><code class="language-bash">The authenticity of host <span class="token string">'github.com (207.97.227.239)'</span> can't be established.
+<span class="token comment" spellcheck="true"># RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span>
+<span class="token comment" spellcheck="true"># Are you sure you want to continue connecting (yes/no)?</span>
+</code></pre>
+<p>这是正常的，你输入 yes 回车既可。如果你创建 SSH key 的时候设置了密码，接下来就会提示你输入密码，如：</p>
+<pre class=" language-bash"><code class="language-bash">Enter passphrase <span class="token keyword">for</span> key <span class="token string">'/c/Users/Administrator/.ssh/id_rsa'</span><span class="token keyword">:</span>
+</code></pre>
+<p>当然如果你密码输错了，会再要求你输入，知道对了为止。</p>
+<p>注意：输入密码时如果输错一个字就会不正确，使用删除键是无法更正的。</p>
+<p>密码正确后你会看到下面这段话，如：</p>
+<pre class=" language-bash"><code class="language-bash">Hi username<span class="token operator">!</span> You've successfully authenticated, but GitHub does not
+<span class="token comment" spellcheck="true"># provide shell access.</span>
+</code></pre>
+<p>如果用户名是正确的,你已经成功设置SSH密钥。如果你看到 “access denied” ，者表示拒绝访问，那么你就需要使用 https 去访问，而不是 SSH 。</p>
+<p>&nbsp;</p>
+<p>产考文档：<a target="_blank" rel="noopener" href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></p>
 
                 
             </div>
@@ -585,7 +577,7 @@ sout + Tab键	System.out.pr">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/breezeblocg.gitee.io/about" rel="external nofollow noreferrer">风</a>
+                    <a href="/breezeblog.gitee.io/about" rel="external nofollow noreferrer">Breeze</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -595,7 +587,7 @@ sout + Tab键	System.out.pr">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblocg.gitee.io/breezeblocg.gitee.io/2022/08/07/iDea%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">https://breezeblog.gitee.io/breezeblocg.gitee.io/breezeblocg.gitee.io/2022/08/07/iDea%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/08/01/ru-he-shi-yong-ssh-lian-jie-github/">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/08/01/ru-he-shi-yong-ssh-lian-jie-github/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -608,7 +600,7 @@ sout + Tab键	System.out.pr">
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/breezeblocg.gitee.io/about" target="_blank">风</a>
+                    <a href="/breezeblog.gitee.io/about" target="_blank">Breeze</a>
                     !
                 </span>
             </div>
@@ -632,17 +624,21 @@ sout + Tab键	System.out.pr">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/breezeblog.gitee.io/tags/git/">
+                                    <span class="chip bg-color">git</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/breezeblocg.gitee.io/libs/share/js/social-share.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -760,10 +756,10 @@ sout + Tab键	System.out.pr">
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/breezeblocg.gitee.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/breezeblog.gitee.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/breezeblocg.gitee.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/breezeblog.gitee.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -801,7 +797,7 @@ sout + Tab键	System.out.pr">
 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/breezeblocg.gitee.io/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("/breezeblog.gitee.io/medias/comment_bg.png") 100% 100% no-repeat;
     }
 
     #vcomments p {
@@ -1035,23 +1031,41 @@ sout + Tab键	System.out.pr">
     </div>
 </div>
 
-<script src="/breezeblocg.gitee.io/libs/valine/av-min.js"></script>
-<script src="/breezeblocg.gitee.io/libs/valine/Valine.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/valine/av-min.js"></script>
+<script src="/breezeblog.gitee.io/libs/valine/Valine.min.js"></script>
 <script>
     new Valine({
         el: '#vcomments',
+        admin_email: '16463223@qq.com',
         appId: 'xOyBkAhlIVqKeXW3suetqchh-gzGzoHsz',
         appKey: 'nFuERzsfKn8HGKQSCrnuwvny',
-        serverURLs: 'https://xoybkahl.lc-cn-n1-shared.com',
+        path: window.location.pathname,
+        comment_count: true,
         notify: 'true' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
-        avatar: 'mm',
+        avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '来啊~快活啊~\(≧▽≦\)'
+        placeholder: '来啊~快活啊~\(≧▽≦\)',
+
+    });
+    $(document).ready(function(){
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
     });
 </script>
+
+
 
 <!--酷Q推送-->
 
@@ -1071,55 +1085,16 @@ sout + Tab键	System.out.pr">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/breezeblocg.gitee.io/2022/08/07/iDea%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/breezeblocg.gitee.io/medias/featureimages/5.jpg" class="responsive-img" alt="iDea常用快捷键">
-                        
-                        <span class="card-title">iDea常用快捷键</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            风
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/breezeblocg.gitee.io/2022/08/07/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                <a href="/breezeblog.gitee.io/2022/08/06/shang-wan-zi-de-javascript-ji-chu-zong-jie/">
                     <div class="card-image">
                         
-                        <img src="/breezeblocg.gitee.io/medias/featureimages/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.jpg" class="responsive-img" alt="Java面向对象">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/js.jpg" class="responsive-img" alt="上万字的JavaScript基础总结">
                         
-                        <span class="card-title">Java面向对象</span>
+                        <span class="card-title">上万字的JavaScript基础总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1129,14 +1104,14 @@ sout + Tab键	System.out.pr">
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-06
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/breezeblocg.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
                                     笔记
                                 </a>
                             
@@ -1147,8 +1122,56 @@ sout + Tab键	System.out.pr">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblocg.gitee.io/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/breezeblog.gitee.io/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/breezeblog.gitee.io/2022/08/01/git-chang-jian-wen-ti-jie-jue-fang-an/">
+                    <div class="card-image">
+                        
+                        <img src="/breezeblog.gitee.io/medias/featureimages/pgit.jpg" class="responsive-img" alt="git常见问题解决方案">
+                        
+                        <span class="card-title">git常见问题解决方案</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/breezeblog.gitee.io/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -1164,23 +1187,23 @@ sout + Tab键	System.out.pr">
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeShrink.js"></script>
 
 
 
@@ -1202,7 +1225,7 @@ sout + Tab键	System.out.pr">
 </div>
 
 
-<script src="/breezeblocg.gitee.io/libs/tocbot/tocbot.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1284,13 +1307,14 @@ sout + Tab键	System.out.pr">
             
                 <span id="year">2022</span>
             
-            <a href="/breezeblocg.gitee.io/about" target="_blank">风</a>    
+            <a href="/breezeblog.gitee.io/about" target="_blank">风</a>    
             <br>
             
             
             
             
-            
+
+
             <br>
 
             <!-- 运行天数提醒. -->
@@ -1373,9 +1397,30 @@ sout + Tab键	System.out.pr">
 
 </div>
     </div>
-</footer>
+    <script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
 <div class="progress-bar"></div>
+</footer>
+
+
 
 
     <!-- 搜索遮罩框 -->
@@ -1478,7 +1523,7 @@ $(function () {
         });
     };
 
-    searchFunc('/breezeblocg.gitee.io/search.xml', 'searchInput', 'searchResult');
+    searchFunc('/breezeblog.gitee.io/search.xml', 'searchInput', 'searchResult');
 });
 </script>
 
@@ -1490,12 +1535,12 @@ $(function () {
 </div>
 
 
-    <script src="/breezeblocg.gitee.io/libs/materialize/materialize.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/aos/aos.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/breezeblocg.gitee.io/js/matery.js"></script>
+    <script src="/breezeblog.gitee.io/libs/materialize/materialize.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/aos/aos.js"></script>
+    <script src="/breezeblog.gitee.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/breezeblog.gitee.io/js/matery.js"></script>
 
     
 
@@ -1509,7 +1554,7 @@ $(function () {
 
      
         <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/breezeblocg.gitee.io/libs/others/TencentCaptcha.js"></script>
+        <script src="/breezeblog.gitee.io/libs/others/TencentCaptcha.js"></script>
         <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
@@ -1544,7 +1589,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.6'
         zIndex="-1" count="99"
-        src="/breezeblocg.gitee.io/libs/background/canvas-nest.js"></script>
+        src="/breezeblog.gitee.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1552,7 +1597,7 @@ $(function () {
     
 
     
-    <script src="/breezeblocg.gitee.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/breezeblog.gitee.io/libs/instantpage/instantpage.js" type="module"></script>
     
    
 

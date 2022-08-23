@@ -4,8 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="我的第一篇博客——致美好的明天, Breeze">
-    <meta name="description" content="温馨提示，此文章需要密码">
+    <meta name="keywords" content="常用hexo指令与常见问题, Breeze">
+    <meta name="description" content="HEXOhexo常用命令hexo安装#安装
+npm install hexo -g 
+
+#升级
+npm update hexo -g
+
+#初始化
+hexo init 
+
+# 查看hexo当前版本
+hexo -v
+
+#查看npm当前版本
+np">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,22 +32,22 @@
 
     
 
-    <title>我的第一篇博客——致美好的明天 | Breeze</title>
-    <link rel="icon" type="image/png" href="/breezeblocg.gitee.io/favicon.png">
+    <title>常用hexo指令与常见问题 | Breeze</title>
+    <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/css/my.css">
 
-    <script src="/breezeblocg.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/breezeblocg.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/breezeblog.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -42,9 +55,9 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+                <a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
                     
-                    <img src="/breezeblocg.gitee.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/breezeblog.gitee.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Breeze</span>
                 </a>
@@ -56,7 +69,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
@@ -78,7 +91,7 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/breezeblocg.gitee.io/tags">
+        <a href="/breezeblog.gitee.io/tags">
           
           <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -87,7 +100,7 @@
       </li>
       
       <li>
-        <a href="/breezeblocg.gitee.io/categories">
+        <a href="/breezeblog.gitee.io/categories">
           
           <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -96,7 +109,7 @@
       </li>
       
       <li>
-        <a href="/breezeblocg.gitee.io/archives">
+        <a href="/breezeblog.gitee.io/archives">
           
           <i class="fas fa-archive" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -110,7 +123,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/about" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/about" class="waves-effect waves-light">
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
@@ -121,7 +134,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/breezeblocg.gitee.io/friends" class="waves-effect waves-light">
+    <a href="/breezeblog.gitee.io/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
@@ -142,7 +155,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/breezeblocg.gitee.io/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/breezeblog.gitee.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Breeze</div>
         <div class="logo-desc">
@@ -156,7 +169,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
@@ -178,7 +191,7 @@
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/tags " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/tags " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
 			      
@@ -188,7 +201,7 @@
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/categories " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/categories " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
 			      
@@ -198,7 +211,7 @@
               
                 <li>
 
-                  <a href="/breezeblocg.gitee.io/archives " style="margin-left:75px">
+                  <a href="/breezeblog.gitee.io/archives " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-archive" style="position: absolute;left:50px" ></i>
 			      
@@ -212,7 +225,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/about" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/about" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
@@ -223,7 +236,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/breezeblocg.gitee.io/friends" class="waves-effect waves-light">
+		<a href="/breezeblog.gitee.io/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
@@ -308,14 +321,14 @@
 </header>
 
     
-<script src="/breezeblocg.gitee.io/libs/cryptojs/crypto-js.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '295e3b36182a716b193efea2e48eb0187c48ca2479310ffd015736717af92cba';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
-                location.href = '/breezeblocg.gitee.io/';
+                location.href = '/breezeblog.gitee.io/';
             }
         }
     })();
@@ -324,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblocg.gitee.io/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/hexo.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">我的第一篇博客——致美好的明天</h1>
+                    <h1 class="description center-align post-title">常用hexo指令与常见问题</h1>
                 </div>
             </div>
         </div>
@@ -342,7 +355,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/breezeblocg.gitee.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/breezeblog.gitee.io/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -445,8 +458,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/breezeblocg.gitee.io/tags/%E6%97%A5%E5%B8%B8/">
-                                <span class="chip bg-color">日常</span>
+                            <a href="/breezeblog.gitee.io/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -457,8 +470,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/breezeblocg.gitee.io/categories/daily/" class="post-category">
-                                daily
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
                             </a>
                         
                     </div>
@@ -477,7 +490,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-06
+                    2022-08-23
                 </div>
                 
 
@@ -496,14 +509,92 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> <strong>2022/8/1</strong> 我的个人博客总算是勉强搭建完了，兜兜转转也花了几天时间，遇到不少问题，还好总算是解决了！<span class="github-emoji"><span>😋</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
-<p>言归正传，就从现在先给自己写短时个规划吧<span class="github-emoji"><span>❗</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
-<p>趁着还没忘记，就在8月5号前更新<strong>markdown相关常用语法知识</strong>已及<strong>常用markdown语法表情</strong>，当然还有<strong>hexo的常见指令</strong>与<strong>git常见指令</strong>；在8月10号前学习完<strong>JavaScript</strong>并一起更新<strong>CSS</strong>,<strong>HTML</strong>；</p>
-<p>9月26号就要考Java的计算机二级啦，好好备考<span class="github-emoji"><span>❗</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>必须一次过</p>
-<p>最令我头疼的英语不知何时才能好转<span class="github-emoji"><span>😣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f623.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>，攻克了Java基础就花点心思在英语上吧！</p>
-<p>不要熬夜，会秃头，多吃饭，长高点，圣体要保护好</p>
-<p>大二争取找个实习把，加油，一年内拿出点成绩出来</p>
-<p>每个人都会有-段异常艰难的时光,没人在乎你怎样在深夜痛哭,别人再怎么感同身受，也只有<br>-瞬间。再苦再累再痛再难熬,只有也只能自己独自撑过。加油吧！进大厂！</p>
+                <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1><h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#安装</span>
+<span class="token function">npm</span> <span class="token function">install</span> hexo -g 
+
+<span class="token comment" spellcheck="true">#升级</span>
+<span class="token function">npm</span> update hexo -g
+
+<span class="token comment" spellcheck="true">#初始化</span>
+hexo init 
+
+<span class="token comment" spellcheck="true"># 查看hexo当前版本</span>
+hexo -v
+
+<span class="token comment" spellcheck="true">#查看npm当前版本</span>
+<span class="token function">npm</span> -v
+</code></pre>
+<h3 id="文章发布流程"><a href="#文章发布流程" class="headerlink" title="文章发布流程"></a>文章发布流程</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#新建文章，可直接在新建好的.md文件中直接编辑</span>
+hexo n <span class="token string">"我的博客"</span> <span class="token operator">==</span> hexo new <span class="token string">"我的博客"</span> 
+
+<span class="token comment" spellcheck="true">#生成</span>
+hexo g <span class="token operator">==</span> hexo generate 
+
+<span class="token comment" spellcheck="true">#启动服务预览，Hexo 会监视文件变动并自动更新，您无须重启服务器。</span>
+hexo s <span class="token operator">==</span> hexo server 
+
+<span class="token comment" spellcheck="true">#部署</span>
+hexo d <span class="token operator">==</span> hexo deploy 
+</code></pre>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#暂时修改启动端口</span>
+hexo server -p 5000 
+
+<span class="token comment" spellcheck="true">#http代理</span>
+<span class="token function">git</span> config --global http.proxy <span class="token string">'socks5://127.0.0.1:1080'</span>
+
+<span class="token comment" spellcheck="true">#https代理</span>
+<span class="token function">git</span> config --global https.proxy <span class="token string">'socks5://127.0.0.1:1080'</span>
+
+<span class="token comment" spellcheck="true">#取消http代理</span>
+<span class="token function">git</span> config --global --unset http.proxy
+
+<span class="token comment" spellcheck="true">#取消https代理</span>
+<span class="token function">git</span> config --global --unset https.proxy
+
+<span class="token comment" spellcheck="true">#清除缓存 网页正常情况下可以忽略此条命令</span>
+hexo clean 
+</code></pre>
+<h2 id="hexo常见问题"><a href="#hexo常见问题" class="headerlink" title="hexo常见问题"></a>hexo常见问题</h2><h3 id="1、本地预览和线上不一致"><a href="#1、本地预览和线上不一致" class="headerlink" title="1、本地预览和线上不一致"></a>1、本地预览和线上不一致</h3><ul>
+<li><strong>可能原因：</strong>  一般可能是<strong>浏览器缓存</strong>，提交需要到线上需要一些时间；还有个原因可能是提交<strong>分支的问题</strong>；还有就是有关<strong>gitee的问题</strong></li>
+<li><strong>解决办法：</strong></li>
+</ul>
+<p>先Ctrl+F5强制刷新，如果不成功那么就可能是其他问题</p>
+<p>对于提交<strong>分支问题</strong>，先去GitHub上查看你默认分支的名字，在博客仓库的设置里<br>  <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/246afd99555042f68a39a2c0a4bcf542~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></p>
+<p>再去hexo站点的_config.yml文件中<code>deploy</code>的相关里使用 <strong>英文逗号</strong> 加 <strong>分支名字</strong>，修改分支为默认分支，如下图</p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18c55230099448d7b3ca090d2c992fc7~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<p>对于<strong>gitee问题</strong>，如果你在gitee上启用了<code>gitee pages</code>服务`，那么你需要在gitee pages页面点击更新，重新部署</p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bae204940fe4704bedd627e9d6db479~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<h3 id="2、出现如下报错："><a href="#2、出现如下报错：" class="headerlink" title="2、出现如下报错："></a>2、出现如下报错：</h3><pre class=" language-bash"><code class="language-bash">ssh: connect to host github.com port 22: Connection timed out
+
+<span class="token comment" spellcheck="true">#或者</span>
+ssh: connect to host 192.168.1.118 port 22: Connection refused
+</code></pre>
+<ul>
+<li><strong>可能原因：</strong> 22端口超时或拒接</li>
+<li><strong>解决办法：</strong> (1)、先使用指令1，应该会出现相同报错，</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 指令1</span>
+<span class="token function">ssh</span> -T git@github.com
+</code></pre>
+<p>(2)、使用指令2，未出现报错</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 指令2</span>
+<span class="token function">ssh</span> -T -p 443 git@ssh.github.com
+<span class="token comment" spellcheck="true"># 未报错</span>
+Hi xxxx<span class="token operator">!</span> You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+<p>(3)、修改端口 ，在**.ssh**文件里新建一个无后缀的config文件，在里面输入如下代码来修改端口到443</p>
+<pre class=" language-bash"><code class="language-bash">Host github.com
+  Hostname ssh.github.com
+  Port 443
+</code></pre>
+<p>如果没有 <strong>.ssh</strong> 文件，关于如何链接.ssh和github可以参考<a target="_blank" rel="noopener" href="https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">GitHub文档</a></p>
+<h3 id="3、出现如图情况"><a href="#3、出现如图情况" class="headerlink" title="3、出现如图情况"></a>3、出现如图情况</h3><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff3c089416c243bfac59682f7229eee5~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%">
+
+<ul>
+<li>可能原因；用户名和密码有问题</li>
+<li>解决办法：参考我另一篇文章《git的常见问题解决放案》</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这是我亲身使用和遇见过的问题（还有很多未来得及记录），在后面会持续更新，有问题或者文章有错误欢迎通过QQ或者电子邮件联系我（后续可能会更新留言功能）</p>
 
                 
             </div>
@@ -520,7 +611,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/breezeblocg.gitee.io/about" rel="external nofollow noreferrer">Breeze</a>
+                    <a href="/breezeblog.gitee.io/about" rel="external nofollow noreferrer">Breeze</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -530,7 +621,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblocg.gitee.io/breezeblocg.gitee.io/2022/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%B4%E7%BE%8E%E5%A5%BD%E7%9A%84%E6%98%8E%E5%A4%A9/">https://breezeblog.gitee.io/breezeblocg.gitee.io/breezeblocg.gitee.io/2022/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%B4%E7%BE%8E%E5%A5%BD%E7%9A%84%E6%98%8E%E5%A4%A9/</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/07/31/chang-yong-hexo-zhi-ling-yu-chang-jian-wen-ti/">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/07/31/chang-yong-hexo-zhi-ling-yu-chang-jian-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -543,7 +634,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/breezeblocg.gitee.io/about" target="_blank">Breeze</a>
+                    <a href="/breezeblog.gitee.io/about" target="_blank">Breeze</a>
                     !
                 </span>
             </div>
@@ -568,20 +659,20 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/breezeblocg.gitee.io/tags/%E6%97%A5%E5%B8%B8/">
-                                    <span class="chip bg-color">日常</span>
+                                <a href="/breezeblog.gitee.io/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/breezeblocg.gitee.io/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/breezeblocg.gitee.io/libs/share/js/social-share.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -699,10 +790,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/breezeblocg.gitee.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/breezeblog.gitee.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/breezeblocg.gitee.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/breezeblog.gitee.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -740,7 +831,7 @@
 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/breezeblocg.gitee.io/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("/breezeblog.gitee.io/medias/comment_bg.png") 100% 100% no-repeat;
     }
 
     #vcomments p {
@@ -974,23 +1065,41 @@
     </div>
 </div>
 
-<script src="/breezeblocg.gitee.io/libs/valine/av-min.js"></script>
-<script src="/breezeblocg.gitee.io/libs/valine/Valine.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/valine/av-min.js"></script>
+<script src="/breezeblog.gitee.io/libs/valine/Valine.min.js"></script>
 <script>
     new Valine({
         el: '#vcomments',
+        admin_email: '16463223@qq.com',
         appId: 'xOyBkAhlIVqKeXW3suetqchh-gzGzoHsz',
         appKey: 'nFuERzsfKn8HGKQSCrnuwvny',
-        serverURLs: 'https://xoybkahl.lc-cn-n1-shared.com',
+        path: window.location.pathname,
+        comment_count: true,
         notify: 'true' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
-        avatar: 'mm',
+        avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '来啊~快活啊~\(≧▽≦\)'
+        placeholder: '来啊~快活啊~\(≧▽≦\)',
+
+    });
+    $(document).ready(function(){
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
     });
 </script>
+
+
 
 <!--酷Q推送-->
 
@@ -1014,10 +1123,58 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/breezeblocg.gitee.io/2022/07/31/%E5%B8%B8%E7%94%A8git%E6%8C%87%E4%BB%A4/">
+                <a href="/breezeblog.gitee.io/2022/08/01/hexo-zhu-ti-you-hua-zhi-nan/">
                     <div class="card-image">
                         
-                        <img src="/breezeblocg.gitee.io/medias/featureimages/git.jpg" class="responsive-img" alt="常用git指令">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/nicehexo.jpg" class="responsive-img" alt="hexo主题优化指南">
+                        
+                        <span class="card-title">hexo主题优化指南</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/breezeblog.gitee.io/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/breezeblog.gitee.io/2022/07/31/chang-yong-git-zhi-ling/">
+                    <div class="card-image">
+                        
+                        <img src="/breezeblog.gitee.io/medias/featureimages/git.jpg" class="responsive-img" alt="常用git指令">
                         
                         <span class="card-title">常用git指令</span>
                     </div>
@@ -1029,14 +1186,14 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/breezeblocg.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
                                     笔记
                                 </a>
                             
@@ -1047,57 +1204,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblocg.gitee.io/tags/git/">
+                    <a href="/breezeblog.gitee.io/tags/git/">
                         <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/breezeblocg.gitee.io/2022/07/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%87%B4%E7%BE%8E%E5%A5%BD%E7%9A%84%E6%98%8E%E5%A4%A9/">
-                    <div class="card-image">
-                        
-                        <img src="/breezeblocg.gitee.io/medias/featureimages/2.jpg" class="responsive-img" alt="我的第一篇博客——致美好的明天">
-                        
-                        <span class="card-title">我的第一篇博客——致美好的明天</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            温馨提示，此文章需要密码
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/breezeblocg.gitee.io/categories/daily/" class="post-category">
-                                    daily
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/breezeblocg.gitee.io/tags/%E6%97%A5%E5%B8%B8/">
-                        <span class="chip bg-color">日常</span>
                     </a>
                     
                 </div>
@@ -1113,23 +1221,23 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/breezeblocg.gitee.io/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/breezeblog.gitee.io/libs/codeBlock/codeShrink.js"></script>
 
 
 
@@ -1151,7 +1259,7 @@
 </div>
 
 
-<script src="/breezeblocg.gitee.io/libs/tocbot/tocbot.min.js"></script>
+<script src="/breezeblog.gitee.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1233,13 +1341,14 @@
             
                 <span id="year">2022</span>
             
-            <a href="/breezeblocg.gitee.io/about" target="_blank">风</a>    
+            <a href="/breezeblog.gitee.io/about" target="_blank">风</a>    
             <br>
             
             
             
             
-            
+
+
             <br>
 
             <!-- 运行天数提醒. -->
@@ -1322,9 +1431,30 @@
 
 </div>
     </div>
-</footer>
+    <script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
 <div class="progress-bar"></div>
+</footer>
+
+
 
 
     <!-- 搜索遮罩框 -->
@@ -1427,7 +1557,7 @@ $(function () {
         });
     };
 
-    searchFunc('/breezeblocg.gitee.io/search.xml', 'searchInput', 'searchResult');
+    searchFunc('/breezeblog.gitee.io/search.xml', 'searchInput', 'searchResult');
 });
 </script>
 
@@ -1439,12 +1569,12 @@ $(function () {
 </div>
 
 
-    <script src="/breezeblocg.gitee.io/libs/materialize/materialize.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/aos/aos.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/breezeblocg.gitee.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/breezeblocg.gitee.io/js/matery.js"></script>
+    <script src="/breezeblog.gitee.io/libs/materialize/materialize.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/aos/aos.js"></script>
+    <script src="/breezeblog.gitee.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/breezeblog.gitee.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/breezeblog.gitee.io/js/matery.js"></script>
 
     
 
@@ -1458,7 +1588,7 @@ $(function () {
 
      
         <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/breezeblocg.gitee.io/libs/others/TencentCaptcha.js"></script>
+        <script src="/breezeblog.gitee.io/libs/others/TencentCaptcha.js"></script>
         <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
@@ -1493,7 +1623,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.6'
         zIndex="-1" count="99"
-        src="/breezeblocg.gitee.io/libs/background/canvas-nest.js"></script>
+        src="/breezeblog.gitee.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1501,7 +1631,7 @@ $(function () {
     
 
     
-    <script src="/breezeblocg.gitee.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/breezeblog.gitee.io/libs/instantpage/instantpage.js" type="module"></script>
     
    
 
