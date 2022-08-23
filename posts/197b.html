@@ -4,13 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="常用git指令, Breeze">
-    <meta name="description" content="git指令随手记我每天使用 Git ，但是很多命令记不住。
-一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
-1、新建代码库# 在当前目录新建一个Git代码库
-$ git init
-
-# 新建一">
+    <meta name="keywords" content="如何使用ssh链接github, Breeze">
+    <meta name="description" content="创建一个 SSH key详细过程转自：https://www.cnblogs.com/ayseeing/p/3572582.html
+1、github管理项目的时候，可以直接使用https url克隆到本地，当然也可以使用 SSH url ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +20,7 @@ $ git init
 
     
 
-    <title>常用git指令 | Breeze</title>
+    <title>如何使用ssh链接github | Breeze</title>
     <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
@@ -334,7 +330,7 @@ $ git init
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">常用git指令</h1>
+                    <h1 class="description center-align post-title">如何使用ssh链接github</h1>
                 </div>
             </div>
         </div>
@@ -475,7 +471,7 @@ $ git init
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-31
+                    2022-08-01
                 </div>
                 
 
@@ -501,261 +497,70 @@ $ git init
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="git指令随手记"><a href="#git指令随手记" class="headerlink" title="git指令随手记"></a>git指令随手记</h2><p>我每天使用 Git ，但是很多命令记不住。</p>
-<p>一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e22f0ebf846244939822ce9dd607d78a~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<h3 id="1、新建代码库"><a href="#1、新建代码库" class="headerlink" title="1、新建代码库"></a>1、新建代码库</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 在当前目录新建一个Git代码库</span>
-$ <span class="token function">git</span> init
-
-<span class="token comment" spellcheck="true"># 新建一个目录，将其初始化为Git代码库</span>
-$ <span class="token function">git</span> init <span class="token punctuation">[</span>project-name<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 下载一个项目和它的整个代码历史</span>
-$ <span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+                <h1 id="创建一个-SSH-key详细过程"><a href="#创建一个-SSH-key详细过程" class="headerlink" title="创建一个 SSH key详细过程"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yinminbo/p/11810302.html">创建一个 SSH key详细过程</a></h1><p>转自：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ayseeing/p/3572582.html">https://www.cnblogs.com/ayseeing/p/3572582.html</a></p>
+<p>1、github管理项目的时候，可以直接使用https url克隆到本地，当然也可以使用 SSH url 克隆到本地。</p>
+<p>2、复制https url 然后到 git Bash 里面直接用clone命令就可以将repository克隆到本地，而使用 SSH url 克隆却需要在克隆之前先配置和添加好 SSH key 。</p>
+<p>3、如果用户想要使用 SSH url 克隆，就必须是这个项目的拥有者。否则用户是无法添加 SSH key 的。</p>
+<p>&nbsp;</p>
+<p>生成多个公钥请点击：<a target="_blank" rel="noopener" href="http://www.cnblogs.com/ayseeing/p/4445194.html">http://www.cnblogs.com/ayseeing/p/4445194.html</a></p>
+<h2 id="https-和-SSH-的区别："><a href="#https-和-SSH-的区别：" class="headerlink" title="https 和 SSH 的区别："></a>https 和 SSH 的区别：</h2><p>1、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</p>
+<p>2、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</p>
+<p>&nbsp;</p>
+<h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><h4 id="1、首先需要检查你电脑是否已经有-SSH-key"><a href="#1、首先需要检查你电脑是否已经有-SSH-key" class="headerlink" title="1、首先需要检查你电脑是否已经有 SSH key"></a>1、首先需要检查你电脑是否已经有 SSH key</h4><p>运行 git Bash 客户端，输入如下代码：</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> ~/.ssh
+$ <span class="token function">ls</span>
 </code></pre>
-<h3 id="2、配置"><a href="#2、配置" class="headerlink" title="2、配置"></a>2、配置</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 显示当前的Git配置</span>
-$ <span class="token function">git</span> config --list
-
-<span class="token comment" spellcheck="true"># 编辑Git配置文件</span>
-$ <span class="token function">git</span> config -e <span class="token punctuation">[</span>--global<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 设置提交代码时的用户信息</span>
-$ <span class="token function">git</span> config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> user.name <span class="token string">"[name]"</span>
-$ <span class="token function">git</span> config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> user.email <span class="token string">"[email address]"</span>
+<p>这两个命令就是检查是否已经存在 id_rsa.pub 或 id_dsa.pub 文件，如果文件已经存在，那么你可以跳过步骤2，直接进入步骤3。</p>
+<p>&nbsp;</p>
+<h4 id="2、创建一个-SSH-key"><a href="#2、创建一个-SSH-key" class="headerlink" title="2、创建一个 SSH key"></a>2、创建一个 SSH key</h4><pre class=" language-bash"><code class="language-bash">$ ssh-keygen -t rsa -C <span class="token string">"your_email@example.com"</span>
 </code></pre>
-<h3 id="3、增加-x2F-删除文件"><a href="#3、增加-x2F-删除文件" class="headerlink" title="3、增加/删除文件"></a>3、增加/删除文件</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 添加指定文件到暂存区</span>
-$ <span class="token function">git</span> add <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
-
-<span class="token comment" spellcheck="true"># 添加指定目录到暂存区，包括子目录</span>
-$ <span class="token function">git</span> add <span class="token punctuation">[</span>dir<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 添加当前目录的所有文件到暂存区</span>
-$ <span class="token function">git</span> add <span class="token keyword">.</span>
-
-<span class="token comment" spellcheck="true"># 添加每个变化前，都会要求确认</span>
-<span class="token comment" spellcheck="true"># 对于同一个文件的多处变化，可以实现分次提交</span>
-$ <span class="token function">git</span> add -p
-
-<span class="token comment" spellcheck="true"># 删除工作区文件，并且将这次删除放入暂存区</span>
-$ <span class="token function">git</span> <span class="token function">rm</span> <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
-
-<span class="token comment" spellcheck="true"># 停止追踪指定文件，但该文件会保留在工作区</span>
-$ <span class="token function">git</span> <span class="token function">rm</span> --cached <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 改名文件，并且将这个改名放入暂存区</span>
-$ <span class="token function">git</span> <span class="token function">mv</span> <span class="token punctuation">[</span>file-original<span class="token punctuation">]</span> <span class="token punctuation">[</span>file-renamed<span class="token punctuation">]</span>
+<p>代码参数含义：</p>
+<p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
+<p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
+<pre class=" language-bash"><code class="language-bash">Generating public/private rsa key pair.
+<span class="token comment" spellcheck="true"># Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span>
 </code></pre>
-<h3 id="4、代码提交"><a href="#4、代码提交" class="headerlink" title="4、代码提交"></a>4、代码提交</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 提交暂存区到仓库区</span>
-$ <span class="token function">git</span> commit -m <span class="token punctuation">[</span>message<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 提交暂存区的指定文件到仓库区</span>
-$ <span class="token function">git</span> commit <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>. -m <span class="token punctuation">[</span>message<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 提交工作区自上次commit之后的变化，直接到仓库区</span>
-$ <span class="token function">git</span> commit -a
-
-<span class="token comment" spellcheck="true"># 提交时显示所有diff信息</span>
-$ <span class="token function">git</span> commit -v
-
-<span class="token comment" spellcheck="true"># 使用一次新的commit，替代上一次提交</span>
-<span class="token comment" spellcheck="true"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span>
-$ <span class="token function">git</span> commit --amend -m <span class="token punctuation">[</span>message<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 重做上一次commit，并包括指定文件的新变化</span>
-$ <span class="token function">git</span> commit --amend <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
+<p>当然，你也可以不输入文件名，使用默认文件名（<strong>推荐</strong>），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
+<p>&nbsp;</p>
+<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），</p>
+<p>当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了，如：</p>
+<pre class=" language-bash"><code class="language-bash">Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>: 
+<span class="token comment" spellcheck="true"># Enter same passphrase again:</span>
 </code></pre>
-<h3 id="5、分支"><a href="#5、分支" class="headerlink" title="5、分支"></a>5、分支</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 列出所有本地分支</span>
-$ <span class="token function">git</span> branch
-
-<span class="token comment" spellcheck="true"># 列出所有远程分支</span>
-$ <span class="token function">git</span> branch -r
-
-<span class="token comment" spellcheck="true"># 列出所有本地分支和远程分支</span>
-$ <span class="token function">git</span> branch -a
-
-<span class="token comment" spellcheck="true"># 新建一个分支，但依然停留在当前分支</span>
-$ <span class="token function">git</span> branch <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 新建一个分支，并切换到该分支</span>
-$ <span class="token function">git</span> checkout -b <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 新建一个分支，指向指定commit</span>
-$ <span class="token function">git</span> branch <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 新建一个分支，与指定的远程分支建立追踪关系</span>
-$ <span class="token function">git</span> branch --track <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>remote-branch<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 切换到指定分支，并更新工作区</span>
-$ <span class="token function">git</span> checkout <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 切换到上一个分支</span>
-$ <span class="token function">git</span> checkout -
-
-<span class="token comment" spellcheck="true"># 建立追踪关系，在现有分支与指定的远程分支之间</span>
-$ <span class="token function">git</span> branch --set-upstream <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>remote-branch<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 合并指定分支到当前分支</span>
-$ <span class="token function">git</span> merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 选择一个commit，合并进当前分支</span>
-$ <span class="token function">git</span> cherry-pick <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 删除分支</span>
-$ <span class="token function">git</span> branch -d <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 删除远程分支</span>
-$ <span class="token function">git</span> push origin --delete <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-$ <span class="token function">git</span> branch -dr <span class="token punctuation">[</span>remote/branch<span class="token punctuation">]</span>
+<p>接下来，就会显示如下代码提示，如：</p>
+<pre class=" language-bash"><code class="language-bash">Your identification has been saved <span class="token keyword">in</span> /c/Users/you/.ssh/id_rsa.
+<span class="token comment" spellcheck="true"># Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.</span>
+<span class="token comment" spellcheck="true"># The key fingerprint is:</span>
+<span class="token comment" spellcheck="true"># 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span>
 </code></pre>
-<h3 id="6、标签"><a href="#6、标签" class="headerlink" title="6、标签"></a>6、标签</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 列出所有tag</span>
-$ <span class="token function">git</span> tag
-
-<span class="token comment" spellcheck="true"># 新建一个tag在当前commit</span>
-$ <span class="token function">git</span> tag <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 新建一个tag在指定commit</span>
-$ <span class="token function">git</span> tag <span class="token punctuation">[</span>tag<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 删除本地tag</span>
-$ <span class="token function">git</span> tag -d <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 删除远程tag</span>
-$ <span class="token function">git</span> push origin :refs/tags/<span class="token punctuation">[</span>tagName<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 查看tag信息</span>
-$ <span class="token function">git</span> show <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 提交指定tag</span>
-$ <span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 提交所有tag</span>
-$ <span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --tags
-
-<span class="token comment" spellcheck="true"># 新建一个分支，指向某个tag</span>
+<p>当你看到上面这段代码的收，那就说明，你的 SSH key 已经创建成功，你只需要添加到github的SSH key上就可以了。</p>
+<p>&nbsp;</p>
+<h4 id="3、添加你的-SSH-key-到-github上面去"><a href="#3、添加你的-SSH-key-到-github上面去" class="headerlink" title="3、添加你的 SSH key 到 github上面去"></a>3、添加你的 SSH key 到 github上面去</h4><p><strong>a、</strong> 首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：</p>
+<pre class=" language-bash"><code class="language-bash">$ clip <span class="token operator">&lt;</span> ~/.ssh/id_rsa.pub
 </code></pre>
-<h3 id="7、查看信息"><a href="#7、查看信息" class="headerlink" title="7、查看信息"></a>7、查看信息</h3><pre class=" language-bash"><code class="language-bash"> <span class="token comment" spellcheck="true"># 显示有变更的文件</span>
- $ <span class="token function">git</span> status
-
- <span class="token comment" spellcheck="true"># 显示当前分支的版本历史</span>
- $ <span class="token function">git</span> log
-
- <span class="token comment" spellcheck="true"># 显示commit历史，以及每次commit发生变更的文件</span>
- $ <span class="token function">git</span> log --stat
-
- <span class="token comment" spellcheck="true"># 搜索提交历史，根据关键词</span>
- $ <span class="token function">git</span> log -S <span class="token punctuation">[</span>keyword<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示某个commit之后的所有变动，每个commit占据一行</span>
- $ <span class="token function">git</span> log <span class="token punctuation">[</span>tag<span class="token punctuation">]</span> HEAD --pretty<span class="token operator">=</span>format:%s
-
- <span class="token comment" spellcheck="true"># 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件</span>
- $ <span class="token function">git</span> log <span class="token punctuation">[</span>tag<span class="token punctuation">]</span> HEAD --grep feature
-
- <span class="token comment" spellcheck="true"># 显示某个文件的版本历史，包括文件改名</span>
- $ <span class="token function">git</span> log --follow <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
- $ <span class="token function">git</span> whatchanged <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示指定文件相关的每一次diff</span>
- $ <span class="token function">git</span> log -p <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示过去5次提交</span>
- $ <span class="token function">git</span> log -5 --pretty --oneline
-
- <span class="token comment" spellcheck="true"># 显示所有提交过的用户，按提交次数排序</span>
- $ <span class="token function">git</span> shortlog -sn
-
- <span class="token comment" spellcheck="true"># 显示指定文件是什么人在什么时间修改过</span>
- $ <span class="token function">git</span> blame <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示暂存区和工作区的差异</span>
- $ <span class="token function">git</span> <span class="token function">diff</span>
-
- <span class="token comment" spellcheck="true"># 显示暂存区和上一个commit的差异</span>
- $ <span class="token function">git</span> <span class="token function">diff</span> --cached <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示工作区与当前分支最新commit之间的差异</span>
- $ <span class="token function">git</span> <span class="token function">diff</span> HEAD
-
- <span class="token comment" spellcheck="true"># 显示两次提交之间的差异</span>
- $ <span class="token function">git</span> <span class="token function">diff</span> <span class="token punctuation">[</span>first-branch<span class="token punctuation">]</span><span class="token punctuation">..</span>.<span class="token punctuation">[</span>second-branch<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示今天你写了多少行代码</span>
- $ <span class="token function">git</span> <span class="token function">diff</span> --shortstat <span class="token string">"@{0 day ago}"</span>
-
- <span class="token comment" spellcheck="true"># 显示某次提交的元数据和内容变化</span>
- $ <span class="token function">git</span> show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示某次提交发生变化的文件</span>
- $ <span class="token function">git</span> show --name-only <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示某次提交时，某个文件的内容</span>
- $ <span class="token function">git</span> show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>:<span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
-
- <span class="token comment" spellcheck="true"># 显示当前分支的最近几次提交</span>
- $ <span class="token function">git</span> reflog
+<p><strong>b、</strong> 登录你的github账号，从又上角的设置（&nbsp;<a target="_blank" rel="noopener" href="https://github.com/settings">Account Settings</a>&nbsp;）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。</p>
+<p><strong>c、</strong> 点击 Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。当然，上面的 Title 所对应的输入框你也可以输入一个该 SSH key 显示在 github 上的一个别名。默认的会使用你的邮件名称。</p>
+<p>&nbsp;</p>
+<h3 id="4、测试一下该SSH-key"><a href="#4、测试一下该SSH-key" class="headerlink" title="4、测试一下该SSH key"></a>4、测试一下该SSH key</h3><p>在git Bash 中输入以下代码</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">ssh</span> -T git@github.com
 </code></pre>
-<h3 id="8、远程同步"><a href="#8、远程同步" class="headerlink" title="8、远程同步"></a>8、远程同步</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 下载远程仓库的所有变动</span>
-$ <span class="token function">git</span> fetch <span class="token punctuation">[</span>remote<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 显示所有远程仓库</span>
-$ <span class="token function">git</span> remote -v
-
-<span class="token comment" spellcheck="true"># 显示某个远程仓库的信息</span>
-$ <span class="token function">git</span> remote show <span class="token punctuation">[</span>remote<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 指定上传仓库位置</span>
-$ <span class="token function">git</span> remote add origin <span class="token punctuation">[</span>你远程仓库的url<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 增加一个新的远程仓库，并命名</span>
-$ <span class="token function">git</span> remote add <span class="token punctuation">[</span>shortname<span class="token punctuation">]</span> <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 取回远程仓库的变化，并与本地分支合并</span>
-$ <span class="token function">git</span> pull <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 上传本地指定分支到远程仓库</span>
-$ <span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 强行推送当前分支到远程仓库，即使有冲突</span>
-$ <span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --force
-
-<span class="token comment" spellcheck="true"># 推送所有分支到远程仓库</span>
-$ <span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --all
+<p>当你输入以上代码时，会有一段警告代码，如：</p>
+<pre class=" language-bash"><code class="language-bash">The authenticity of host <span class="token string">'github.com (207.97.227.239)'</span> can't be established.
+<span class="token comment" spellcheck="true"># RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span>
+<span class="token comment" spellcheck="true"># Are you sure you want to continue connecting (yes/no)?</span>
 </code></pre>
-<h3 id="9、撤销"><a href="#9、撤销" class="headerlink" title="9、撤销"></a>9、撤销</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 恢复暂存区的指定文件到工作区</span>
-$ <span class="token function">git</span> checkout <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 恢复某个commit的指定文件到暂存区和工作区</span>
-$ <span class="token function">git</span> checkout <span class="token punctuation">[</span>commit<span class="token punctuation">]</span> <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 恢复暂存区的所有文件到工作区</span>
-$ <span class="token function">git</span> checkout <span class="token keyword">.</span>
-
-<span class="token comment" spellcheck="true"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span>
-$ <span class="token function">git</span> reset <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 重置暂存区与工作区，与上一次commit保持一致</span>
-$ <span class="token function">git</span> reset --hard
-
-<span class="token comment" spellcheck="true"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span>
-$ <span class="token function">git</span> reset <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span>
-$ <span class="token function">git</span> reset --hard <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span>
-$ <span class="token function">git</span> reset --keep <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 新建一个commit，用来撤销指定commit</span>
-<span class="token comment" spellcheck="true"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span>
-$ <span class="token function">git</span> revert <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-<span class="token comment" spellcheck="true"># 暂时将未提交的变化移除，稍后再移入</span>
-$ <span class="token function">git</span> stash
-$ <span class="token function">git</span> stash pop
+<p>这是正常的，你输入 yes 回车既可。如果你创建 SSH key 的时候设置了密码，接下来就会提示你输入密码，如：</p>
+<pre class=" language-bash"><code class="language-bash">Enter passphrase <span class="token keyword">for</span> key <span class="token string">'/c/Users/Administrator/.ssh/id_rsa'</span><span class="token keyword">:</span>
 </code></pre>
-<h3 id="10、其他"><a href="#10、其他" class="headerlink" title="10、其他"></a>10、其他</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 生成一个可供发布的压缩包</span>
-$ <span class="token function">git</span> archive
+<p>当然如果你密码输错了，会再要求你输入，知道对了为止。</p>
+<p>注意：输入密码时如果输错一个字就会不正确，使用删除键是无法更正的。</p>
+<p>密码正确后你会看到下面这段话，如：</p>
+<pre class=" language-bash"><code class="language-bash">Hi username<span class="token operator">!</span> You've successfully authenticated, but GitHub does not
+<span class="token comment" spellcheck="true"># provide shell access.</span>
 </code></pre>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>文档借鉴自大佬：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">阮一峰</a></p>
+<p>如果用户名是正确的,你已经成功设置SSH密钥。如果你看到 “access denied” ，者表示拒绝访问，那么你就需要使用 https 去访问，而不是 SSH 。</p>
+<p>&nbsp;</p>
+<p>产考文档：<a target="_blank" rel="noopener" href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></p>
 
                 
             </div>
@@ -782,7 +587,7 @@ $ <span class="token function">git</span> archive
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/07/31/chang-yong-git-zhi-ling/">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/07/31/chang-yong-git-zhi-ling/</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/197b">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/197b</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1311,12 +1116,12 @@ $ <span class="token function">git</span> archive
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/2022/07/31/chang-yong-hexo-zhi-ling-yu-chang-jian-wen-ti/">
+                <a href="/breezeblog.gitee.io/posts/5199">
                     <div class="card-image">
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/hexo.jpg" class="responsive-img" alt="常用hexo指令与常见问题">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/js.jpg" class="responsive-img" alt="上万字的JavaScript基础总结">
                         
-                        <span class="card-title">常用hexo指令与常见问题</span>
+                        <span class="card-title">上万字的JavaScript基础总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1327,7 +1132,7 @@ $ <span class="token function">git</span> archive
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-06
                         </span>
                         <span class="publish-author">
                             
@@ -1344,8 +1149,8 @@ $ <span class="token function">git</span> archive
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblog.gitee.io/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/breezeblog.gitee.io/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -1359,30 +1164,30 @@ $ <span class="token function">git</span> archive
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/2022/07/31/wo-de-di-yi-pian-bo-ke-zhi-mei-hao-de-ming-tian/">
+                <a href="/breezeblog.gitee.io/posts/a281">
                     <div class="card-image">
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/2.jpg" class="responsive-img" alt="我的第一篇博客——致美好的明天">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/pgit.jpg" class="responsive-img" alt="git常见问题解决方案">
                         
-                        <span class="card-title">我的第一篇博客——致美好的明天</span>
+                        <span class="card-title">git常见问题解决方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            温馨提示，此文章需要密码
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/breezeblog.gitee.io/categories/daily/" class="post-category">
-                                    daily
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
@@ -1392,8 +1197,8 @@ $ <span class="token function">git</span> archive
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblog.gitee.io/tags/%E6%97%A5%E5%B8%B8/">
-                        <span class="chip bg-color">日常</span>
+                    <a href="/breezeblog.gitee.io/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>

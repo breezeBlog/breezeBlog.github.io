@@ -4,9 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何使用ssh链接github, Breeze">
-    <meta name="description" content="创建一个 SSH key详细过程转自：https://www.cnblogs.com/ayseeing/p/3572582.html
-1、github管理项目的时候，可以直接使用https url克隆到本地，当然也可以使用 SSH url ">
+    <meta name="keywords" content="常用hexo指令与常见问题, Breeze">
+    <meta name="description" content="HEXOhexo常用命令hexo安装#安装
+npm install hexo -g 
+
+#升级
+npm update hexo -g
+
+#初始化
+hexo init 
+
+# 查看hexo当前版本
+hexo -v
+
+#查看npm当前版本
+np">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +32,7 @@
 
     
 
-    <title>如何使用ssh链接github | Breeze</title>
+    <title>常用hexo指令与常见问题 | Breeze</title>
     <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
@@ -325,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/git.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/hexo.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何使用ssh链接github</h1>
+                    <h1 class="description center-align post-title">常用hexo指令与常见问题</h1>
                 </div>
             </div>
         </div>
@@ -446,8 +458,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/breezeblog.gitee.io/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/breezeblog.gitee.io/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -471,7 +483,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-01
+                    2022-07-31
                 </div>
                 
 
@@ -497,70 +509,92 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="创建一个-SSH-key详细过程"><a href="#创建一个-SSH-key详细过程" class="headerlink" title="创建一个 SSH key详细过程"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yinminbo/p/11810302.html">创建一个 SSH key详细过程</a></h1><p>转自：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ayseeing/p/3572582.html">https://www.cnblogs.com/ayseeing/p/3572582.html</a></p>
-<p>1、github管理项目的时候，可以直接使用https url克隆到本地，当然也可以使用 SSH url 克隆到本地。</p>
-<p>2、复制https url 然后到 git Bash 里面直接用clone命令就可以将repository克隆到本地，而使用 SSH url 克隆却需要在克隆之前先配置和添加好 SSH key 。</p>
-<p>3、如果用户想要使用 SSH url 克隆，就必须是这个项目的拥有者。否则用户是无法添加 SSH key 的。</p>
-<p>&nbsp;</p>
-<p>生成多个公钥请点击：<a target="_blank" rel="noopener" href="http://www.cnblogs.com/ayseeing/p/4445194.html">http://www.cnblogs.com/ayseeing/p/4445194.html</a></p>
-<h2 id="https-和-SSH-的区别："><a href="#https-和-SSH-的区别：" class="headerlink" title="https 和 SSH 的区别："></a>https 和 SSH 的区别：</h2><p>1、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</p>
-<p>2、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</p>
-<p>&nbsp;</p>
-<h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><h4 id="1、首先需要检查你电脑是否已经有-SSH-key"><a href="#1、首先需要检查你电脑是否已经有-SSH-key" class="headerlink" title="1、首先需要检查你电脑是否已经有 SSH key"></a>1、首先需要检查你电脑是否已经有 SSH key</h4><p>运行 git Bash 客户端，输入如下代码：</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> ~/.ssh
-$ <span class="token function">ls</span>
+                <h1 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h1><h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#安装</span>
+<span class="token function">npm</span> <span class="token function">install</span> hexo -g 
+
+<span class="token comment" spellcheck="true">#升级</span>
+<span class="token function">npm</span> update hexo -g
+
+<span class="token comment" spellcheck="true">#初始化</span>
+hexo init 
+
+<span class="token comment" spellcheck="true"># 查看hexo当前版本</span>
+hexo -v
+
+<span class="token comment" spellcheck="true">#查看npm当前版本</span>
+<span class="token function">npm</span> -v
 </code></pre>
-<p>这两个命令就是检查是否已经存在 id_rsa.pub 或 id_dsa.pub 文件，如果文件已经存在，那么你可以跳过步骤2，直接进入步骤3。</p>
-<p>&nbsp;</p>
-<h4 id="2、创建一个-SSH-key"><a href="#2、创建一个-SSH-key" class="headerlink" title="2、创建一个 SSH key"></a>2、创建一个 SSH key</h4><pre class=" language-bash"><code class="language-bash">$ ssh-keygen -t rsa -C <span class="token string">"your_email@example.com"</span>
+<h3 id="文章发布流程"><a href="#文章发布流程" class="headerlink" title="文章发布流程"></a>文章发布流程</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#新建文章，可直接在新建好的.md文件中直接编辑</span>
+hexo n <span class="token string">"我的博客"</span> <span class="token operator">==</span> hexo new <span class="token string">"我的博客"</span> 
+
+<span class="token comment" spellcheck="true">#生成</span>
+hexo g <span class="token operator">==</span> hexo generate 
+
+<span class="token comment" spellcheck="true">#启动服务预览，Hexo 会监视文件变动并自动更新，您无须重启服务器。</span>
+hexo s <span class="token operator">==</span> hexo server 
+
+<span class="token comment" spellcheck="true">#部署</span>
+hexo d <span class="token operator">==</span> hexo deploy 
 </code></pre>
-<p>代码参数含义：</p>
-<p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
-<p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
-<pre class=" language-bash"><code class="language-bash">Generating public/private rsa key pair.
-<span class="token comment" spellcheck="true"># Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#暂时修改启动端口</span>
+hexo server -p 5000 
+
+<span class="token comment" spellcheck="true">#http代理</span>
+<span class="token function">git</span> config --global http.proxy <span class="token string">'socks5://127.0.0.1:1080'</span>
+
+<span class="token comment" spellcheck="true">#https代理</span>
+<span class="token function">git</span> config --global https.proxy <span class="token string">'socks5://127.0.0.1:1080'</span>
+
+<span class="token comment" spellcheck="true">#取消http代理</span>
+<span class="token function">git</span> config --global --unset http.proxy
+
+<span class="token comment" spellcheck="true">#取消https代理</span>
+<span class="token function">git</span> config --global --unset https.proxy
+
+<span class="token comment" spellcheck="true">#清除缓存 网页正常情况下可以忽略此条命令</span>
+hexo clean 
 </code></pre>
-<p>当然，你也可以不输入文件名，使用默认文件名（<strong>推荐</strong>），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
-<p>&nbsp;</p>
-<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），</p>
-<p>当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了，如：</p>
-<pre class=" language-bash"><code class="language-bash">Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>: 
-<span class="token comment" spellcheck="true"># Enter same passphrase again:</span>
+<h2 id="hexo常见问题"><a href="#hexo常见问题" class="headerlink" title="hexo常见问题"></a>hexo常见问题</h2><h3 id="1、本地预览和线上不一致"><a href="#1、本地预览和线上不一致" class="headerlink" title="1、本地预览和线上不一致"></a>1、本地预览和线上不一致</h3><ul>
+<li><strong>可能原因：</strong>  一般可能是<strong>浏览器缓存</strong>，提交需要到线上需要一些时间；还有个原因可能是提交<strong>分支的问题</strong>；还有就是有关<strong>gitee的问题</strong></li>
+<li><strong>解决办法：</strong></li>
+</ul>
+<p>先Ctrl+F5强制刷新，如果不成功那么就可能是其他问题</p>
+<p>对于提交<strong>分支问题</strong>，先去GitHub上查看你默认分支的名字，在博客仓库的设置里<br>  <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/246afd99555042f68a39a2c0a4bcf542~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></p>
+<p>再去hexo站点的_config.yml文件中<code>deploy</code>的相关里使用 <strong>英文逗号</strong> 加 <strong>分支名字</strong>，修改分支为默认分支，如下图</p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18c55230099448d7b3ca090d2c992fc7~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<p>对于<strong>gitee问题</strong>，如果你在gitee上启用了<code>gitee pages</code>服务`，那么你需要在gitee pages页面点击更新，重新部署</p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bae204940fe4704bedd627e9d6db479~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<h3 id="2、出现如下报错："><a href="#2、出现如下报错：" class="headerlink" title="2、出现如下报错："></a>2、出现如下报错：</h3><pre class=" language-bash"><code class="language-bash">ssh: connect to host github.com port 22: Connection timed out
+
+<span class="token comment" spellcheck="true">#或者</span>
+ssh: connect to host 192.168.1.118 port 22: Connection refused
 </code></pre>
-<p>接下来，就会显示如下代码提示，如：</p>
-<pre class=" language-bash"><code class="language-bash">Your identification has been saved <span class="token keyword">in</span> /c/Users/you/.ssh/id_rsa.
-<span class="token comment" spellcheck="true"># Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.</span>
-<span class="token comment" spellcheck="true"># The key fingerprint is:</span>
-<span class="token comment" spellcheck="true"># 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span>
+<ul>
+<li><strong>可能原因：</strong> 22端口超时或拒接</li>
+<li><strong>解决办法：</strong> (1)、先使用指令1，应该会出现相同报错，</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 指令1</span>
+<span class="token function">ssh</span> -T git@github.com
 </code></pre>
-<p>当你看到上面这段代码的收，那就说明，你的 SSH key 已经创建成功，你只需要添加到github的SSH key上就可以了。</p>
-<p>&nbsp;</p>
-<h4 id="3、添加你的-SSH-key-到-github上面去"><a href="#3、添加你的-SSH-key-到-github上面去" class="headerlink" title="3、添加你的 SSH key 到 github上面去"></a>3、添加你的 SSH key 到 github上面去</h4><p><strong>a、</strong> 首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：</p>
-<pre class=" language-bash"><code class="language-bash">$ clip <span class="token operator">&lt;</span> ~/.ssh/id_rsa.pub
+<p>(2)、使用指令2，未出现报错</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 指令2</span>
+<span class="token function">ssh</span> -T -p 443 git@ssh.github.com
+<span class="token comment" spellcheck="true"># 未报错</span>
+Hi xxxx<span class="token operator">!</span> You've successfully authenticated, but GitHub does not provide shell access.
 </code></pre>
-<p><strong>b、</strong> 登录你的github账号，从又上角的设置（&nbsp;<a target="_blank" rel="noopener" href="https://github.com/settings">Account Settings</a>&nbsp;）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。</p>
-<p><strong>c、</strong> 点击 Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。当然，上面的 Title 所对应的输入框你也可以输入一个该 SSH key 显示在 github 上的一个别名。默认的会使用你的邮件名称。</p>
-<p>&nbsp;</p>
-<h3 id="4、测试一下该SSH-key"><a href="#4、测试一下该SSH-key" class="headerlink" title="4、测试一下该SSH key"></a>4、测试一下该SSH key</h3><p>在git Bash 中输入以下代码</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">ssh</span> -T git@github.com
+<p>(3)、修改端口 ，在**.ssh**文件里新建一个无后缀的config文件，在里面输入如下代码来修改端口到443</p>
+<pre class=" language-bash"><code class="language-bash">Host github.com
+  Hostname ssh.github.com
+  Port 443
 </code></pre>
-<p>当你输入以上代码时，会有一段警告代码，如：</p>
-<pre class=" language-bash"><code class="language-bash">The authenticity of host <span class="token string">'github.com (207.97.227.239)'</span> can't be established.
-<span class="token comment" spellcheck="true"># RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span>
-<span class="token comment" spellcheck="true"># Are you sure you want to continue connecting (yes/no)?</span>
-</code></pre>
-<p>这是正常的，你输入 yes 回车既可。如果你创建 SSH key 的时候设置了密码，接下来就会提示你输入密码，如：</p>
-<pre class=" language-bash"><code class="language-bash">Enter passphrase <span class="token keyword">for</span> key <span class="token string">'/c/Users/Administrator/.ssh/id_rsa'</span><span class="token keyword">:</span>
-</code></pre>
-<p>当然如果你密码输错了，会再要求你输入，知道对了为止。</p>
-<p>注意：输入密码时如果输错一个字就会不正确，使用删除键是无法更正的。</p>
-<p>密码正确后你会看到下面这段话，如：</p>
-<pre class=" language-bash"><code class="language-bash">Hi username<span class="token operator">!</span> You've successfully authenticated, but GitHub does not
-<span class="token comment" spellcheck="true"># provide shell access.</span>
-</code></pre>
-<p>如果用户名是正确的,你已经成功设置SSH密钥。如果你看到 “access denied” ，者表示拒绝访问，那么你就需要使用 https 去访问，而不是 SSH 。</p>
-<p>&nbsp;</p>
-<p>产考文档：<a target="_blank" rel="noopener" href="https://help.github.com/articles/generating-ssh-keys">https://help.github.com/articles/generating-ssh-keys</a></p>
+<p>如果没有 <strong>.ssh</strong> 文件，关于如何链接.ssh和github可以参考<a target="_blank" rel="noopener" href="https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">GitHub文档</a></p>
+<h3 id="3、出现如图情况"><a href="#3、出现如图情况" class="headerlink" title="3、出现如图情况"></a>3、出现如图情况</h3><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff3c089416c243bfac59682f7229eee5~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%">
+
+<ul>
+<li>可能原因；用户名和密码有问题</li>
+<li>解决办法：参考我另一篇文章《git的常见问题解决放案》</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这是我亲身使用和遇见过的问题（还有很多未来得及记录），在后面会持续更新，有问题或者文章有错误欢迎通过QQ或者电子邮件联系我（后续可能会更新留言功能）</p>
 
                 
             </div>
@@ -587,7 +621,7 @@ $ <span class="token function">ls</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/08/01/ru-he-shi-yong-ssh-lian-jie-github/">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/2022/08/01/ru-he-shi-yong-ssh-lian-jie-github/</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/de62">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/de62</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -625,8 +659,8 @@ $ <span class="token function">ls</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/breezeblog.gitee.io/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/breezeblog.gitee.io/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -1116,12 +1150,12 @@ $ <span class="token function">ls</span>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/2022/08/06/shang-wan-zi-de-javascript-ji-chu-zong-jie/">
+                <a href="/breezeblog.gitee.io/posts/b8dd">
                     <div class="card-image">
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/js.jpg" class="responsive-img" alt="上万字的JavaScript基础总结">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/nicehexo.jpg" class="responsive-img" alt="hexo主题优化指南">
                         
-                        <span class="card-title">上万字的JavaScript基础总结</span>
+                        <span class="card-title">hexo主题优化指南</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1132,7 +1166,7 @@ $ <span class="token function">ls</span>
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-01
                         </span>
                         <span class="publish-author">
                             
@@ -1149,8 +1183,8 @@ $ <span class="token function">ls</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblog.gitee.io/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/breezeblog.gitee.io/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1164,12 +1198,12 @@ $ <span class="token function">ls</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/2022/08/01/git-chang-jian-wen-ti-jie-jue-fang-an/">
+                <a href="/breezeblog.gitee.io/posts/8344">
                     <div class="card-image">
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/pgit.jpg" class="responsive-img" alt="git常见问题解决方案">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/git.jpg" class="responsive-img" alt="常用git指令">
                         
-                        <span class="card-title">git常见问题解决方案</span>
+                        <span class="card-title">常用git指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1180,7 +1214,7 @@ $ <span class="token function">ls</span>
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
                             </span>
                         <span class="publish-author">
                             
