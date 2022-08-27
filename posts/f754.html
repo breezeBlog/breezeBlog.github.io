@@ -5,23 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="一篇6.5k字的CSS总结, Breeze">
-    <meta name="description" content="这是我参与「第四届青训营 」笔记创作活动的的第 2 天
-前言
- 本节课的重点内容主要有： 
- 
+    <meta name="description" content="浅品 CSS一、常用语法与基本概念1、CSS 是什么*Cascading Style Sheets（层叠样式表）*CSS 是一门基于规则的语言 —— 你能定义用于你的网页中特定元素样式的一组规则。让你的网页更加美观。
 
-CSS是什么
-
-CSS是如何工作的
-
-CSS的部分功能与对应属性
-
-选择器优先级和继承问题
-
-布局是什么，怎么布局
-
-块级盒模型，行级盒模型
-">
+用来定义页面元素的样">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -493,7 +479,7 @@ CSS的部分功能与对应属性
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-23
+                    2022-08-27
                 </div>
                 
 
@@ -512,29 +498,7 @@ CSS的部分功能与对应属性
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>这是我参与「第四届青训营 」笔记创作活动的的第 2 天</strong></p>
-<h2>前言</h2>
- 本节课的<strong>重点内容</strong>主要有： 
- 
-<ul>
-<li><p>CSS是什么</p>
-</li>
-<li><p>CSS是如何工作的</p>
-</li>
-<li><p>CSS的部分功能与对应属性</p>
-</li>
-<li><p>选择器优先级和继承问题</p>
-</li>
-<li><p>布局是什么，怎么布局</p>
-</li>
-<li><p>块级盒模型，行级盒模型</p>
-</li>
-<li><p><strong>FlexBox</strong>和<strong>Gird</strong>的基本使用</p>
-</li>
-<li><p>CSS3 的一些新特性</p>
-</li>
-</ul>
-<h1 id="浅品-CSS"><a href="#浅品-CSS" class="headerlink" title="浅品 CSS"></a>浅品 CSS</h1><h3 id="1、CSS-是什么"><a href="#1、CSS-是什么" class="headerlink" title="1、CSS 是什么"></a>1、CSS 是什么</h3><p><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets（层叠样式表）<br>CSS 是一门基于规则的语言 —— 你能定义用于你的网页中特定元素样式的一组规则。<br>让你的网页更加美观。</p>
+                <h1 id="浅品-CSS"><a href="#浅品-CSS" class="headerlink" title="浅品 CSS"></a>浅品 CSS</h1><h2 id="一、常用语法与基本概念"><a href="#一、常用语法与基本概念" class="headerlink" title="一、常用语法与基本概念"></a>一、常用语法与基本概念</h2><h3 id="1、CSS-是什么"><a href="#1、CSS-是什么" class="headerlink" title="1、CSS 是什么"></a>1、CSS 是什么</h3><p><strong>*C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets（层叠样式表）*<br>CSS 是一门基于规则的语言 —— 你能定义用于你的网页中特定元素样式的一组规则。<br>让你的网页更加美观。</p>
 <ul>
 <li>用来定义页面元素的样式</li>
 <li>设置字体和颜色</li>
@@ -584,7 +548,8 @@ CSS的部分功能与对应属性
  }
 </code></pre>
 <h4 id="3-3、-id选择器"><a href="#3-3、-id选择器" class="headerlink" title="3.3、 id选择器"></a>3.3、 <strong>id</strong>选择器</h4><p>在 HTML 中给组件绑定 id，在 CSS 中以#开头+id 名来达到选择效果，值得注意的是 id 值必须是唯一的，并且 id 不能以数字开头</p>
-<pre class=" language-css"><code class="language-css"> <span class="token selector">&lt;p id="exciting">这里是id选择器代码展示&lt;/p>
+<pre class=" language-css"><code class="language-css">
+ <span class="token selector">&lt;p id="exciting">这里是id选择器代码展示&lt;/p>
 
   <span class="token id">#exciting</span></span><span class="token punctuation">{</span>
         <span class="token property">background</span><span class="token punctuation">:</span>
@@ -597,7 +562,7 @@ p </span><span class="token punctuation">{</span>
   <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h4 id="3-5、-class-选择器"><a href="#3-5、-class-选择器" class="headerlink" title="3.5、 class 选择器"></a>3.5、 <strong><code>class</code></strong> 选择器</h4><p>与 id 选择器类似但是是以 class 的属性名来决定，不同的是其中 class 的值可以出现多次</p>
+<h4 id="3-5、-class-选择器"><a href="#3-5、-class-选择器" class="headerlink" title="3.5、 class 选择器"></a>3.5、 <strong><code>class</code></strong> 选择器</h4><p>与 id 选择器类似但是是以 class 的属性名来决定，不同的是其中 class 的值可以出现多次，</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>a<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   hello
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>
@@ -607,8 +572,8 @@ p </span><span class="token punctuation">{</span>
         <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
       <span class="token punctuation">}</span>
 
-      <span class="token selector">//先执行选择器b 再执行选择器c
-      <span class="token class">.b</span> </span><span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">/*先执行选择器b 再执行选择器c*/</span>
+      <span class="token selector"><span class="token class">.b</span> </span><span class="token punctuation">{</span>
         <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
       <span class="token punctuation">}</span>
       <span class="token selector"><span class="token class">.c</span> </span><span class="token punctuation">{</span>
@@ -618,23 +583,74 @@ p </span><span class="token punctuation">{</span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
 </code></pre>
-<h4 id="5-6、-属性-选择器"><a href="#5-6、-属性-选择器" class="headerlink" title="5.6、 属性 选择器"></a>5.6、 <strong>属性</strong> 选择器</h4><ul>
-<li><p><code>属性="attr"</code>表示属性名称为 &nbsp;<em>attr</em> 的元素。</p>
+<h4 id="5-6、属性-选择器"><a href="#5-6、属性-选择器" class="headerlink" title="5.6、属性 选择器"></a>5.6、<strong>属性</strong> 选择器</h4><ul>
+<li><p><code>[attr]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性的元素。</p>
 </li>
-<li><p><code>属性^="attr"</code>表示属性名称为 &nbsp;<em>attr</em> 的元素，其值以值为前缀（以<em>attr</em>开头）。</p>
+<li><p><code>[attr=value]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性，且属性值为<em>值</em>&nbsp; 的元素。</p>
 </li>
-<li><p><code>属性$="attr"</code> 表示属性名称为 &nbsp;<em>attr 的元素，</em> 其值后缀（后跟）_值为值_。</p>
+<li><p><code>[attr~=value]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性的元素，并且该属性是一个以空格作为分隔的值列表，其中至少有一个值为<em>值</em>。</p>
+</li>
+<li><p><code>[attr|=value]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性的元素，属性值为“value”或是以“value-”为前缀（“”为连字符，Unicode 编码为 U+002D）开头。典型的应用场景是用来匹配语言简写代码（如 zh-CN，zh-TW 可以用 zh 作为 value）。<code>-</code></p>
+</li>
+<li><p><code>[attr^=value]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性，且属性值是以 *value *开头的元素。</p>
+</li>
+<li><p><code>[attr$=value]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性，且属性值是以 *value *结尾的元素。</p>
+</li>
+<li><p><code>[attr*=value]</code>表示带有以 &nbsp;<em>attr</em>&nbsp; 命名的属性，且属性值至少包含一个 *value *值的元素。</p>
 </li>
 </ul>
-<h4 id="5-7、-伪类"><a href="#5-7、-伪类" class="headerlink" title="5.7、 伪类"></a>5.7、 <strong>伪类</strong></h4><p>是添加到选择器中的关键字，用于指定所选元素的特殊状态。分为</p>
-<ul>
-<li><strong>状态性伪类</strong>比如链接访问过<code>::link</code>，未访问过<code>::visited</code>，鼠标放在上面<code>::hover</code> 鼠标点击<code>::active</code> 还有输入框有聚焦状态<code>::focus</code>， 非聚焦状态：</li>
-<li><strong>非状态性伪类</strong> 结构性：<code>first-child</code> <code>last-child</code></li>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* 存在 title 属性的&lt;a> 元素 */</span>
+<span class="token selector">a<span class="token attribute">[title]</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> purple<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* 存在 href 属性并且属性值匹配"https://example.org"的&lt;a> 元素 */</span>
+<span class="token selector">a[href="https://example<span class="token class">.org</span>"]
+</span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* 存在 href 属性并且属性值包含"example"的&lt;a> 元素 */</span>
+<span class="token selector">a<span class="token attribute">[href*="example"]</span> </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">2</span>em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* 存在 href 属性并且属性值结尾是".org"的&lt;a> 元素 */</span>
+<span class="token selector">a[href$="<span class="token class">.org</span>"] </span><span class="token punctuation">{</span>
+  <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* 存在 class 属性并且属性值包含以空格分隔的"logo"的&lt;a>元素 */</span>
+<span class="token selector">a<span class="token attribute">[class~="logo"]</span> </span><span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">2</span>px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="5-7、-伪类"><a href="#5-7、-伪类" class="headerlink" title="5.7、 伪类"></a>5.7、 <strong>伪类</strong></h4><p>CSS&nbsp;<strong><em>伪类</em></strong>&nbsp; 是添加到选择器的关键字，指定要选择的元素的特殊状态。例如，<code>：hover</code>&nbsp; 可被用于在用户将鼠标悬停在按钮上时改变按钮的颜色。</p>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* 所有用户指针悬停的按钮 */</span>
+<span class="token selector">button<span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="动态伪伪类"><a href="#动态伪伪类" class="headerlink" title="动态伪伪类"></a>动态伪伪类</h5><ul>
+<li><code>:link</code>元素被定义了超链接但并未被访问过</li>
+<li><code>:visited</code>元素被定义了超链接并已被访问过</li>
+<li><code>:active</code>元素被激活</li>
+<li><code>:hover</code>鼠标悬停</li>
+<li><code>:focus</code>元素获取焦点</li>
+</ul>
+<h5 id="UI-元素状态伪类"><a href="#UI-元素状态伪类" class="headerlink" title="UI 元素状态伪类"></a>UI 元素状态伪类</h5><ul>
+<li><code>:checked</code>选中的复选按钮或者单选按钮表单元素</li>
+<li><code>:enabled</code>所有启用的表单元素</li>
+<li><code>:disabled</code>所有禁用的表单元素</li>
+</ul>
+<h5 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h5><ul>
+<li><code>:fisrt-child</code>父元素的第一个子元素</li>
+<li><code>:last-child</code>父元素的最后一个子元素的元素</li>
 </ul>
 <h4 id="5-8、关系选择器"><a href="#5-8、关系选择器" class="headerlink" title="5.8、关系选择器"></a>5.8、<strong>关系</strong>选择器</h4><ol>
 <li>后代选择器</li>
 </ol>
-<p>定义：选择<strong>所有</strong>被 E 元素包含的 F 元素，中间用空格隔开<br>语法：<code>E F{}</code></p>
+<p>定义：选择<strong>所有</strong>被 E 元素包含的 F 元素，中间用空格隔开<br>语法：<code>E F{}r</code></p>
 <ol start="2">
 <li>子代选择器</li>
 </ol>
@@ -669,7 +685,7 @@ p </span><span class="token punctuation">{</span>
 </li>
 <li><p><code>font-weight</code>字重 ;范围：100-900 ；其中 400 可以用 normal 替代，700 可以用 bold 替代 如果存在无法改变自重的情况时，可能是因为改字体仅有 normal 和 bold 两种属性</p>
 </li>
-<li><p><code> line-height</code>行高 ;推荐使用无单位的数字如 1.6 ，其表示为为自身字体大小的 1.6 倍，更明显直观</p>
+<li><p><code> line-height</code>行高 ;推荐使用无单位的数字如 1.6 ，其表示为为自身字体大小的 1.6 倍，更明显直观 , 让行高等于高可以达到垂直居中的效果</p>
 </li>
 </ul>
 <p>以上属性都可浓缩为 font 属性，简述时其他值为默认值 ，还有字符间距，首行缩进等</p>
@@ -803,7 +819,7 @@ p </span><span class="token punctuation">{</span>
 <li><code>ext-indent</code>文本块中首行文本的缩进</li>
 </ul>
 <pre class=" language-css"><code class="language-css"><span class="token selector">p</span><span class="token punctuation">{</span>
-<span class="token property">text-indent</span><span class="token punctuation">:</span> <span class="token number">50</span>px<span class="token punctuation">;</span>
+text-i <span class="token property">ndent</span><span class="token punctuation">:</span> <span class="token number">50</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <h4 id="5-5、表格属性"><a href="#5-5、表格属性" class="headerlink" title="5.5、表格属性"></a>5.5、表格属性</h4><ul>
@@ -816,7 +832,7 @@ p </span><span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <ul>
-<li>折叠边框<br>border-collapse` 属性设置表格的边框是否被折叠成一个单一的边框或隔开</li>
+<li>折叠边框<br>border-collapse 属性设置表格的边框是否被折叠成一个单一的边框或隔开</li>
 </ul>
 <pre class=" language-CSS"><code class="language-CSS">table { border-collapse:collapse; }
 table,td { border: 1px solid black; }
@@ -862,7 +878,7 @@ th </span><span class="token punctuation">{</span>
   <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h1 id="深入-CSS"><a href="#深入-CSS" class="headerlink" title="深入 CSS"></a>深入 CSS</h1><h3 id="1-选择器特异度"><a href="#1-选择器特异度" class="headerlink" title="1.选择器特异度"></a>1.选择器特异度</h3><p>在给 HTML 元素应用样式时，多个选择器指向同一个元素，会应用优先级高的选择器，而选择器优先级高低是通过权重计算得到的</p>
+<h1 id="深入-CSS"><a href="#深入-CSS" class="headerlink" title="深入 CSS"></a>深入 CSS</h1><h2 id="二、基础布局和盒模型"><a href="#二、基础布局和盒模型" class="headerlink" title="二、基础布局和盒模型"></a>二、基础布局和盒模型</h2><h3 id="1-选择器特异度"><a href="#1-选择器特异度" class="headerlink" title="1.选择器特异度"></a>1.选择器特异度</h3><p>在给 HTML 元素应用样式时，多个选择器指向同一个元素，会应用优先级高的选择器，而选择器优先级高低是通过权重计算得到的</p>
 <p>权重由<strong>高到低</strong>如下（为了更直观行让内样式加入其中）：</p>
 <p>权重向量： (0, 0, 0, 0)</p>
 <p>行内样式 &gt; ID 选择器 &gt; class/属性/伪类选择器 &gt; 类型 / 伪元素</p>
@@ -948,7 +964,7 @@ th </span><span class="token punctuation">{</span>
 <p><strong>区别：</strong> 块级盒子摆放、属性的适用性、和 HTML 的关系 –&gt; 元素生成盒子 等存在不同。</p>
 <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c70aa6c71bb1488996f5d10a44a0f5fc~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="70%">
 
-<h2 id="一、常规流"><a href="#一、常规流" class="headerlink" title="一、常规流"></a>一、常规流</h2><h3 id="1、行级排版上下文"><a href="#1、行级排版上下文" class="headerlink" title="1、行级排版上下文"></a>1、行级排版上下文</h3><p>在只包含行级盒子的时候会创建行级<strong>IFC（lnline Formatting Context）</strong><br><strong>排版规则</strong></p>
+<h2 id="三、常规流"><a href="#三、常规流" class="headerlink" title="三、常规流"></a>三、常规流</h2><h3 id="1、行级排版上下文"><a href="#1、行级排版上下文" class="headerlink" title="1、行级排版上下文"></a>1、行级排版上下文</h3><p>在只包含行级盒子的时候会创建行级<strong>IFC（lnline Formatting Context）</strong><br><strong>排版规则</strong></p>
 <ul>
 <li>盒子在一行内水平摆放</li>
 <li>一行放不下时，换行显示</li>
@@ -1022,7 +1038,7 @@ grid—area ：footer;
 <p>如果行轨道和列轨道<strong>小于</strong>容器还可以使用<code>align-content: center /</code>等（格式同 flex），对轨道进行对齐</p>
 <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2245d1252ff42cb81639983d82617b5~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="70%">
 
-<h2 id="二、文档流"><a href="#二、文档流" class="headerlink" title="二、文档流"></a>二、文档流</h2><p>文档流是文档中可显示对象在排列时所占用的位置/空间 ，例如:块元素自上而下摆放，内联元素，从左到右摆放</p>
+<h2 id="四、文档流"><a href="#四、文档流" class="headerlink" title="四、文档流"></a>四、文档流</h2><p>文档流是文档中可显示对象在排列时所占用的位置/空间 ，例如:块元素自上而下摆放，内联元素，从左到右摆放</p>
 <p>标准流里面的限制非常多，导致很多页面效果无法实现</p>
 <ol>
 <li>高矮不齐，底边对齐</li>
@@ -1031,8 +1047,8 @@ grid—area ：footer;
 <li>如果我们想让 img 标签之间没有空隙，必须紧密连接</li>
 </ol>
 <p>怎么解决呢？</p>
-<h2 id="三、浮动流（float）"><a href="#三、浮动流（float）" class="headerlink" title="三、浮动流（float）"></a>三、浮动流（float）</h2><p>主要实现字图环绕，更多的用常规布局替代，可使用<code>float: left/right</code>开启，会脱离文档流，出现覆盖的情况；通俗点说就是浮动流都在新的一层</p>
-<h2 id="四、绝对定位"><a href="#四、绝对定位" class="headerlink" title="四、绝对定位"></a>四、绝对定位</h2><p><strong>position 属性</strong></p>
+<h2 id="五、浮动流（float）"><a href="#五、浮动流（float）" class="headerlink" title="五、浮动流（float）"></a>五、浮动流（float）</h2><p>主要实现字图环绕，更多的用常规布局替代，可使用<code>float: left/right</code>开启，会脱离文档流，出现覆盖的情况；通俗点说就是浮动流都在新的一层，可以用来左对齐，或者右对齐</p>
+<h2 id="六、绝对定位"><a href="#六、绝对定位" class="headerlink" title="六、绝对定位"></a>六、绝对定位</h2><p><strong>position 属性</strong></p>
 <ul>
 <li><p><strong>static</strong> 默认值 ， 非定位元素，参与常规流的布局</p>
 </li>
@@ -1049,7 +1065,7 @@ grid—area ：footer;
 <p>那么就引出了一个小知识：</p>
 <p><strong><code>Z-index</code></strong></p>
 <p>zindex 属性设置元素的堆叠顺序，属性值为 number（1、2、3…）。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面，那么谁上谁下就不一定了（doge）</p>
-<h2 id="五、CSS3-新特性"><a href="#五、CSS3-新特性" class="headerlink" title="五、CSS3 新特性"></a>五、CSS3 新特性</h2><h3 id="1、圆角效果"><a href="#1、圆角效果" class="headerlink" title="1、圆角效果"></a>1、圆角效果</h3><p>使用<code>border-radius</code>属性即可，属性值可以调节圆角度数</p>
+<h2 id="七、CSS3-新特性"><a href="#七、CSS3-新特性" class="headerlink" title="七、CSS3 新特性"></a>七、CSS3 新特性</h2><h3 id="1、圆角效果"><a href="#1、圆角效果" class="headerlink" title="1、圆角效果"></a>1、圆角效果</h3><p>使用<code>border-radius</code>属性即可，属性值可以调节圆角度数</p>
 <ul>
 <li>四个值:第一个值为左上角，第二个值为右上角,第三个值为右下角，第四个值为左下角（<strong>左上——&gt;左下，顺时针</strong>）</li>
 <li>三个值:第一个值为左上角,第二个值为右上角和左下角,第三个值为右下角（<strong>不建议使用</strong>）</li>
@@ -1265,7 +1281,7 @@ scale=<span class="token number">1</span>，user-scalab<span class="token number
 <p>7.挑选相应图标并获取类名，应用于页面:</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>iconfont icon-xxx(地址) xxx(使用时大小默认) <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
 </code></pre>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>CSS 目前已经大致更新完善了，但是还是会更新以后遇到的新知识，里面包含了我在字节跳动青训营的学习总结，也有在 b 站学习知识，感谢您的阅读和赞赏~!</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>CSS 目前已经大致更新完善了，但是还是会更新以后遇到的新知识，也有在 b 站学习知识，感谢您的阅读和赞赏~!</p>
 <p><strong>本文如有错误欢迎纠正指正!&nbsp;<a href="https://link.juejin.cn/?target=https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e0069c4ff46a449ba432e2d1a89438fb~tplv-k3u1fbpfcp-zoom-1.image" title="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e0069c4ff46a449ba432e2d1a89438fb~tplv-k3u1fbpfcp-zoom-1.image">😊</a></strong></p>
 <h3 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h3><p>选择器——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">知识充电</a></p>
 <p>CSS 属性——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/attr">知识充电</a></p>
