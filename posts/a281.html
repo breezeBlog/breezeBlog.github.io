@@ -41,9 +41,7 @@
 
     <script src="/breezeblog.gitee.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.2.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/breezeblog.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 6.2.0"><link rel="stylesheet" href="/breezeblog.gitee.io/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -505,7 +503,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="1、出现登录错误，如图"><a href="#1、出现登录错误，如图" class="headerlink" title="1、出现登录错误，如图"></a>1、出现登录错误，如图</h3><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff3c089416c243bfac59682f7229eee5~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%">
+                <h3 id="1、出现登录错误，如图"><a href="#1、出现登录错误，如图" class="headerlink" title="1、出现登录错误，如图"></a>1、出现登录错误，如图</h3><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff3c089416c243bfac59682f7229eee5~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%" />
 
 <ul>
 <li><p><strong>可能原因：</strong> 用户名和密码有问题，这是我在同步gitee和github的时候出现的情况，还有一种情况就是仅仅在提交Gitee或GitHub的时候报此错</p>
@@ -538,7 +536,7 @@
 <p>3、若确认信息无误，仍然存在此情况</p>
 <p>3.1、<strong>在在同步gitee和github时：</strong> 删除<strong>后绑定</strong>的公钥并重新添加，比如把github的ssh给到gitee同步，就把gitee绑定的ssh删了重新添加一次即可</p>
 <p>3.2、<strong>在单独提交时：</strong> 删除电脑中的**.ss**文件重新新建一个。关于如何新建ssh可以参考<a target="_blank" rel="noopener" href="http://breezeblog.github.io/2022/08/01/ru-he-shi-yong-ssh-lian-jie-github/">《如何使用ssh链接github》</a> 或者直接搜</p>
-<h3 id="2、出现add后部分文件无法添加的情况"><a href="#2、出现add后部分文件无法添加的情况" class="headerlink" title="2、出现add后部分文件无法添加的情况"></a>2、出现add后部分文件无法添加的情况</h3><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/46e31b6016ba48a6ab545a6cd802a150~tplv-k3u1fbpfcp-watermark.image" alt="image.png" width="100%">
+<h3 id="2、出现add后部分文件无法添加的情况"><a href="#2、出现add后部分文件无法添加的情况" class="headerlink" title="2、出现add后部分文件无法添加的情况"></a>2、出现add后部分文件无法添加的情况</h3><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/46e31b6016ba48a6ab545a6cd802a150~tplv-k3u1fbpfcp-watermark.image" alt="image.png" width="100%" />
 
 <ul>
 <li><p><strong>可能问题：</strong> 文件中存在 .git文件 </p>
@@ -557,7 +555,7 @@ cd [路径]
 del .git
 </code></pre>
 <p><strong>注意：</strong> 删除后无法恢复，可以先复制一份防止出错</p>
-<p>然后你会发现依然无法提交，因为.git文件被删除，所以可以在删除了.git文件目录的上一级新建一个随意名字的文件夹，把该文件放进去，最后正常的<code>git add</code> ，<code>git commit -m"提交信息"</code>，<code>git push</code>就可以啦  </p>
+<p>然后你会发现依然无法提交，因为.git文件被删除，所以可以在删除了.git文件目录的上一级新建一个随意名字的文件夹，把该文件放进去，最后正常的<code>git add</code> ，<code>git commit -m&quot;提交信息&quot;</code>，<code>git push</code>就可以啦  </p>
 
                 
             </div>
