@@ -4,11 +4,23 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="iDea常用快捷键, Breeze">
-    <meta name="description" content="整理了一些IDEA开发常用的快捷键：
-快捷键组合	实现效果
-psvm + Tab键 / main + Tab键	public static void main(String[] args)
-sout + Tab键	System.out.pr">
+    <meta name="keywords" content="Breeze">
+    <meta name="description" content="链表（Linked List）实际结构：
+
+逻辑结构：
+
+介绍
+链表是以节点的方式来存储
+
+每个节点包含data域，next域
+
+next域：指向下一个节点
+data域：数据
+
+
+各个节点不一定是连续存储
+
+分为带头节点和不带头节点两种，根">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +34,7 @@ sout + Tab键	System.out.pr">
 
     
 
-    <title>iDea常用快捷键 | Breeze</title>
+    <title>Breeze</title>
     <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
@@ -327,12 +339,12 @@ sout + Tab键	System.out.pr">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/breezeblog.gitee.io/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">iDea常用快捷键</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -460,14 +472,14 @@ sout + Tab键	System.out.pr">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-07
+                    2022-09-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-23
+                    2022-09-20
                 </div>
                 
 
@@ -486,89 +498,24 @@ sout + Tab键	System.out.pr">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>整理了一些IDEA开发常用的快捷键：</p>
-<p>快捷键组合	实现效果</p>
-<p>psvm + Tab键 / main + Tab键	public static void main(String[] args)</p>
-<p>sout + Tab键	System.out.println()</p>
-<p>Ctrl + X	删除当前行</p>
-<p>Ctrl +D	复制当前行</p>
-<p>Alt+Insert(或右键Generate)	生成代码(如get,set方法,构造函数等)</p>
-<p>Ctrl+Alt+T	生成try catch （或者 Alt+enter选择）</p>
-<p>CTRL+ALT+T	把选中的代码放在 TRY{} IF{} ELSE{} 里</p>
-<p>Ctr+shift+U	实现大小写之间的转化</p>
-<p>ALT+回车	导入包,自动修正</p>
-<p>CTRL+ALT+L	格式化代码</p>
-<p>CTRL+ALT+I	自动缩进</p>
-<p>CTRL+E	最近更改的代码</p>
-<p>fori	生成for (int i = 0; i &lt; ; i++) {}</p>
-<p>Alt + &lt;–左右–&gt;键	实现窗口左右更换（多窗口）</p>
-<p>Ctrl + 鼠标点击	快速找到成员变量的出处</p>
-<p>Shift+F6	重构/重命名 (包、类、方法、变量、甚至注释等)</p>
-<p>CTRL+Q	查看当前方法的声明</p>
-<p>Ctrl+Alt+V	自动创建变量（new 对象();之后选择按快捷键）</p>
-<p>Ctrl+O	重写方法</p>
-<p>Ctrl+I	实现方法</p>
-<p>ALT+/	代码提示</p>
-<p>Ctrl+Shift+R	在当前项目中替换指定内容</p>
-<p>Ctrl+E	最近编辑的文件列表</p>
-<p>Ctrl+P	显示方法参数信息</p>
-<p>Ctrl+Shift+Insert	查看历史复制记录，idea可以保留历史复制的 100 条记录</p>
-<p>控制台语句 System.out 相关：</p>
-<p>生成控制台的相关快捷键	描述</p>
-<p>sout + Tab键	生成System.out.println();，输出到控制台语句并换行。</p>
-<p>souf + Tab键	生成System.out.printf(“”);,输出一个格式化字符串到控制台。</p>
-<p>soutm + Tab键	生成System.out.println(“类名.方法名”);，输出当前 类和方法名 到控制台。</p>
-<p>soutp + Tab键	生成System.out.println(所有方法参数名+值);，输出当前 方法的参数名和值 到控制台。</p>
-<p>————————————–日常使用 必备快捷键—————————————</p>
-<p>查找</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + F	在当前文件进行文本查找</p>
-<p>Ctrl + R	在当前文件进行文本替换</p>
-<p>Shift + Ctrl + F	在项目进行文本查找</p>
-<p>Shift + Ctrl + R	在项目进行文本替换</p>
-<p>Shift + Shift	快速搜索</p>
-<p>Ctrl + N	查找class</p>
-<p>Ctrl + Shift + N	查找文件</p>
-<p>Ctrl + Shift + Alt + N	查找symbol（查找某个方法名）</p>
-<p>跳转切换</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + E	最近文件</p>
-<p>Ctrl + Tab	切换文件</p>
-<p>Ctrl + Alt + ←/→	跳转历史光标所在处</p>
-<p>Alt + ←/→ 方向键	切换子tab</p>
-<p>Ctrl + G	go to（跳转指定行号）</p>
-<p>编码相关</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + W	快速选中</p>
-<p>(Shift + Ctrl) + Alt + J	快速选中同文本</p>
-<p>Ctrl + C/Ctrl + X/Ctrl + D	快速复制或剪切</p>
-<p>多行选中 Tab / Shift + Tab	tab</p>
-<p>Ctrl + Y	删除整行</p>
-<p>滚轮点击变量/方法/类	快速进入变量/方法/类的定义处</p>
-<p>Shift + 点击Tab	快速关闭tab</p>
-<p>Ctrl + Z 、Ctrl + Shift + Z	后悔药，撤销/取消撤销</p>
-<p>Ctrl + Shift + enter	自动收尾，代码自动补全</p>
-<p>Alt + enter	IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同</p>
-<p>Alt + ↑/↓	方法快速跳转</p>
-<p>F2	跳转到下一个高亮错误 或 警告位置</p>
-<p>Alt + Insert	代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等</p>
-<p>Ctrl + Shift + L	格式化代码</p>
-<p>Shift + F6	快速修改方法名、变量名、文件名、类名等</p>
-<p>Ctrl + F6	快速修改方法签名</p>
-<p>代码阅读相关</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + P	方法参数提示显示</p>
-<p>Ctrl + Shift + i	就可以在当前类里再弹出一个窗口出来</p>
-<p>Alt + F7	可以列出变量在哪些地方被使用了</p>
-<p>光标在子类接口名，Ctrl + u	跳到父类接口</p>
-<p>Alt + F1 + 1， esc</p>
-<p>(Shift) + Ctrl + +/-	代码块折叠</p>
-<p>Ctrl + Shift + ←/→	移动窗口分割线</p>
-<p>Ctrl + (Alt) + B	跳转方法定义/实现</p>
-<p>Ctrl + H	类的层级关系</p>
-<p>Ctrl + F12	Show Members 类成员快速显示<br>版本管理相关</p>
-<p>快捷键	介绍<br>Ctrl + D	Show Diff</p>
-<p>(Shift) + F7	（上）下一处修改</p>
+                <h1 id="链表（Linked-List）"><a href="#链表（Linked-List）" class="headerlink" title="链表（Linked List）"></a>链表（Linked List）</h1><p>实际结构：</p>
+<p><img src="C:\Users\h2629\AppData\Roaming\Typora\typora-user-images\image-20220920154419055.png" alt="image-20220920154419055"></p>
+<p>逻辑结构：</p>
+<p><img src="C:\Users\h2629\AppData\Roaming\Typora\typora-user-images\image-20220920155409854.png" alt="image-20220920155409854"></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li><p>链表是以节点的方式来存储</p>
+</li>
+<li><p>每个节点包含data域，next域</p>
+<ul>
+<li>next域：指向下一个节点</li>
+<li>data域：数据</li>
+</ul>
+</li>
+<li><p>各个节点不一定是连续存储</p>
+</li>
+<li><p>分为带头节点和不带头节点两种，根据实际需求确定</p>
+</li>
+</ul>
 
                 
             </div>
@@ -595,7 +542,7 @@ sout + Tab键	System.out.pr">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/2d67">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/2d67</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/0">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/0</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1116,9 +1063,10 @@ sout + Tab键	System.out.pr">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/breezeblog.gitee.io/posts/0">
                     <div class="card-image">
@@ -1136,9 +1084,9 @@ sout + Tab键	System.out.pr">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1147,6 +1095,7 @@ sout + Tab键	System.out.pr">
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1157,12 +1106,13 @@ sout + Tab键	System.out.pr">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/posts/70b0">
+                <a href="/breezeblog.gitee.io/posts/2d67">
                     <div class="card-image">
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.jpg" class="responsive-img" alt="Java面向对象">
                         
-                        <span class="card-title">Java面向对象</span>
+                        <img src="/breezeblog.gitee.io/medias/featureimages/5.jpg" class="responsive-img" alt="iDea常用快捷键">
+                        
+                        <span class="card-title">iDea常用快捷键</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1177,23 +1127,11 @@ sout + Tab键	System.out.pr">
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            风
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/breezeblog.gitee.io/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
                 </div>
                 
             </div>
