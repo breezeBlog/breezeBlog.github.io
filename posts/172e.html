@@ -4,11 +4,24 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="iDea常用快捷键, Breeze">
-    <meta name="description" content="整理了一些IDEA开发常用的快捷键：
-快捷键组合	实现效果
-psvm + Tab键 &amp;#x2F; main + Tab键	public static void main(String[] args)
-sout + Tab键	System.o">
+    <meta name="keywords" content="转义字符（Escape character）, Breeze">
+    <meta name="description" content="转义字符（Escape character）所有的 ASCII 码都可以用“\”加数字（一般是 8 进制数字）来表示。
+转义字符对照表
+
+
+转义字符
+意义
+ASCLL 码值(十进制)
+
+
+
+\a
+响铃(BEL)
+007
+
+
+\b
+退格(BS">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +35,7 @@ sout + Tab键	System.o">
 
     
 
-    <title>iDea常用快捷键 | Breeze</title>
+    <title>转义字符（Escape character） | Breeze</title>
     <link rel="icon" type="image/png" href="/breezeblog.gitee.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/breezeblog.gitee.io/libs/awesome/css/all.min.css">
@@ -330,7 +343,7 @@ sout + Tab键	System.o">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">iDea常用快捷键</h1>
+                    <h1 class="description center-align post-title">转义字符（Escape character）</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +457,25 @@ sout + Tab键	System.o">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/breezeblog.gitee.io/tags/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/">
+                                <span class="chip bg-color">转义字符</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -458,14 +484,14 @@ sout + Tab键	System.o">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-07
+                    2022-09-25
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-23
+                    2022-09-25
                 </div>
                 
 
@@ -484,89 +510,162 @@ sout + Tab键	System.o">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>整理了一些IDEA开发常用的快捷键：</p>
-<p>快捷键组合	实现效果</p>
-<p>psvm + Tab键 &#x2F; main + Tab键	public static void main(String[] args)</p>
-<p>sout + Tab键	System.out.println()</p>
-<p>Ctrl + X	删除当前行</p>
-<p>Ctrl +D	复制当前行</p>
-<p>Alt+Insert(或右键Generate)	生成代码(如get,set方法,构造函数等)</p>
-<p>Ctrl+Alt+T	生成try catch （或者 Alt+enter选择）</p>
-<p>CTRL+ALT+T	把选中的代码放在 TRY{} IF{} ELSE{} 里</p>
-<p>Ctr+shift+U	实现大小写之间的转化</p>
-<p>ALT+回车	导入包,自动修正</p>
-<p>CTRL+ALT+L	格式化代码</p>
-<p>CTRL+ALT+I	自动缩进</p>
-<p>CTRL+E	最近更改的代码</p>
-<p>fori	生成for (int i &#x3D; 0; i &lt; ; i++) {}</p>
-<p>Alt + &lt;–左右–&gt;键	实现窗口左右更换（多窗口）</p>
-<p>Ctrl + 鼠标点击	快速找到成员变量的出处</p>
-<p>Shift+F6	重构&#x2F;重命名 (包、类、方法、变量、甚至注释等)</p>
-<p>CTRL+Q	查看当前方法的声明</p>
-<p>Ctrl+Alt+V	自动创建变量（new 对象();之后选择按快捷键）</p>
-<p>Ctrl+O	重写方法</p>
-<p>Ctrl+I	实现方法</p>
-<p>ALT+&#x2F;	代码提示</p>
-<p>Ctrl+Shift+R	在当前项目中替换指定内容</p>
-<p>Ctrl+E	最近编辑的文件列表</p>
-<p>Ctrl+P	显示方法参数信息</p>
-<p>Ctrl+Shift+Insert	查看历史复制记录，idea可以保留历史复制的 100 条记录</p>
-<p>控制台语句 System.out 相关：</p>
-<p>生成控制台的相关快捷键	描述</p>
-<p>sout + Tab键	生成System.out.println();，输出到控制台语句并换行。</p>
-<p>souf + Tab键	生成System.out.printf(“”);,输出一个格式化字符串到控制台。</p>
-<p>soutm + Tab键	生成System.out.println(“类名.方法名”);，输出当前 类和方法名 到控制台。</p>
-<p>soutp + Tab键	生成System.out.println(所有方法参数名+值);，输出当前 方法的参数名和值 到控制台。</p>
-<p>————————————–日常使用 必备快捷键—————————————</p>
-<p>查找</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + F	在当前文件进行文本查找</p>
-<p>Ctrl + R	在当前文件进行文本替换</p>
-<p>Shift + Ctrl + F	在项目进行文本查找</p>
-<p>Shift + Ctrl + R	在项目进行文本替换</p>
-<p>Shift + Shift	快速搜索</p>
-<p>Ctrl + N	查找class</p>
-<p>Ctrl + Shift + N	查找文件</p>
-<p>Ctrl + Shift + Alt + N	查找symbol（查找某个方法名）</p>
-<p>跳转切换</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + E	最近文件</p>
-<p>Ctrl + Tab	切换文件</p>
-<p>Ctrl + Alt + ←&#x2F;→	跳转历史光标所在处</p>
-<p>Alt + ←&#x2F;→ 方向键	切换子tab</p>
-<p>Ctrl + G	go to（跳转指定行号）</p>
-<p>编码相关</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + W	快速选中</p>
-<p>(Shift + Ctrl) + Alt + J	快速选中同文本</p>
-<p>Ctrl + C&#x2F;Ctrl + X&#x2F;Ctrl + D	快速复制或剪切</p>
-<p>多行选中 Tab &#x2F; Shift + Tab	tab</p>
-<p>Ctrl + Y	删除整行</p>
-<p>滚轮点击变量&#x2F;方法&#x2F;类	快速进入变量&#x2F;方法&#x2F;类的定义处</p>
-<p>Shift + 点击Tab	快速关闭tab</p>
-<p>Ctrl + Z 、Ctrl + Shift + Z	后悔药，撤销&#x2F;取消撤销</p>
-<p>Ctrl + Shift + enter	自动收尾，代码自动补全</p>
-<p>Alt + enter	IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同</p>
-<p>Alt + ↑&#x2F;↓	方法快速跳转</p>
-<p>F2	跳转到下一个高亮错误 或 警告位置</p>
-<p>Alt + Insert	代码自动生成，如生成对象的 set &#x2F; get 方法，构造函数，toString() 等</p>
-<p>Ctrl + Shift + L	格式化代码</p>
-<p>Shift + F6	快速修改方法名、变量名、文件名、类名等</p>
-<p>Ctrl + F6	快速修改方法签名</p>
-<p>代码阅读相关</p>
-<p>快捷键	介绍</p>
-<p>Ctrl + P	方法参数提示显示</p>
-<p>Ctrl + Shift + i	就可以在当前类里再弹出一个窗口出来</p>
-<p>Alt + F7	可以列出变量在哪些地方被使用了</p>
-<p>光标在子类接口名，Ctrl + u	跳到父类接口</p>
-<p>Alt + F1 + 1， esc</p>
-<p>(Shift) + Ctrl + +&#x2F;-	代码块折叠</p>
-<p>Ctrl + Shift + ←&#x2F;→	移动窗口分割线</p>
-<p>Ctrl + (Alt) + B	跳转方法定义&#x2F;实现</p>
-<p>Ctrl + H	类的层级关系</p>
-<p>Ctrl + F12	Show Members 类成员快速显示<br>版本管理相关</p>
-<p>快捷键	介绍<br>Ctrl + D	Show Diff</p>
-<p>(Shift) + F7	（上）下一处修改</p>
+                <h1 id="转义字符（Escape-character）"><a href="#转义字符（Escape-character）" class="headerlink" title="转义字符（Escape character）"></a>转义字符（Escape character）</h1><p>所有的 ASCII 码都可以用“\”加数字（一般是 8 进制数字）来表示。</p>
+<h3 id="转义字符对照表"><a href="#转义字符对照表" class="headerlink" title="转义字符对照表"></a>转义字符对照表</h3><table>
+<thead>
+<tr>
+<th align="center">转义字符</th>
+<th align="left">意义</th>
+<th align="center">ASCLL 码值(十进制)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\a</td>
+<td align="left">响铃(BEL)</td>
+<td align="center">007</td>
+</tr>
+<tr>
+<td align="center">\b</td>
+<td align="left">退格(BS) ，将当前位置移到前一列</td>
+<td align="center">008</td>
+</tr>
+<tr>
+<td align="center">\f</td>
+<td align="left">换页(FF)，将当前位置移到下页开头</td>
+<td align="center">012</td>
+</tr>
+<tr>
+<td align="center">\n</td>
+<td align="left">换行(LF) ，将当前位置移到下一行开头</td>
+<td align="center">010</td>
+</tr>
+<tr>
+<td align="center">\r</td>
+<td align="left">回车(CR) ，将当前位置移到本行开头</td>
+<td align="center">013</td>
+</tr>
+<tr>
+<td align="center">\t</td>
+<td align="left">水平制表(HT) （跳到下一个 TAB 位置）</td>
+<td align="center">009</td>
+</tr>
+<tr>
+<td align="center">\v</td>
+<td align="left">垂直制表(VT)</td>
+<td align="center">011</td>
+</tr>
+<tr>
+<td align="center">&#39;</td>
+<td align="left">代表一个单引号</td>
+<td align="center">039</td>
+</tr>
+<tr>
+<td align="center">&quot;</td>
+<td align="left">代表一个双引号字符</td>
+<td align="center">034</td>
+</tr>
+<tr>
+<td align="center">\</td>
+<td align="left">代表一个反斜线字符’’’</td>
+<td align="center">092</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td align="left">代表一个问号</td>
+<td align="center">063</td>
+</tr>
+<tr>
+<td align="center">\0</td>
+<td align="left">空字符(NUL)</td>
+<td align="center">000</td>
+</tr>
+<tr>
+<td align="center">\ddd</td>
+<td align="left">1 到 3 位八进制数所代表的任意字符</td>
+<td align="center">三位八进制</td>
+</tr>
+<tr>
+<td align="center">\xhh</td>
+<td align="left">十六进制所代表的任意字符</td>
+<td align="center">十六进制</td>
+</tr>
+</tbody></table>
+<h3 id="n和-t"><a href="#n和-t" class="headerlink" title="\n和\t"></a><code>\n</code>和<code>\t</code></h3><p>它们是最常用的两个转义字符：</p>
+<ul>
+<li><code>\n</code>用来换行，让文本从下一行的开头输出，前面的章节中已经多次使用；</li>
+<li><code>\t</code>用来占位，一般相当于四个空格，或者 tab 键的功能。</li>
+<li><code>\xhh</code> 十六进制转义不限制字符个数 <code>&#39;\x000000000000F&#39; == &#39;\xF&#39;</code></li>
+</ul>
+<h3 id="特殊的字符"><a href="#特殊的字符" class="headerlink" title="特殊的字符"></a>特殊的字符</h3><p>单引号、双引号、反斜杠是特殊的字符，不能直接表示：</p>
+<ul>
+<li>单引号是字符类型的开头和结尾，要使用<code>\&#39;</code>表示，也即<code>&#39;\&#39;&#39;</code>；</li>
+<li>双引号是字符串的开头和结尾，要使用<code>\&quot;</code>表示，也即<code>&quot;abc\&quot;123&quot;</code>；</li>
+<li>反斜杠是转义字符的开头，要使用<code>\\</code>表示，也即<code>&#39;\\&#39;</code>，或者<code>&quot;abc\\123&quot;</code>。</li>
+</ul>
+<h3 id="编程语言转义字符："><a href="#编程语言转义字符：" class="headerlink" title="编程语言转义字符："></a>编程语言转义字符：</h3><ul>
+<li>如 HTML 转义符、java 转义符、xml 转义符、 oracle 转义符、sql 转义符 、sqlserver 转义符、php 转义符、asp 转义符、vb 转义符、 javascript 转义符等等，还有网址中的百分号。</li>
+<li>例如，HTML 的 <code>&lt;</code> <code>&gt;</code> <code>&amp;</code> <code>&quot;</code> <code>©</code> 分别是 <code>&lt;</code> <code>&gt;</code> <code>&amp;</code> <code>&quot;</code> <code>©</code> 的转义字符</li>
+<li>通常情况下，HTML 会自动截去多余的空格。不管你加多少空格，都被看做一个空格。比如你在两个字之间加了 10 个空格，HTML 会截去 9 个空格，只保留一个。为了在网页中增加空格，你可以使用 <code> </code> 表示空格。</li>
+<li>XML 只有 5 个转义符: <code>&lt;</code> <code>&gt;</code> <code>&amp;</code> <code>&quot;</code> <code>&#39;</code></li>
+</ul>
+<h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h3><ul>
+<li>web 开发中通过英文问号（ <code>?</code> ）方式在浏览器地址栏中传值时。浏览器是通过“ <code>&amp;</code> ”来区分问号后的参数个数的。</li>
+<li>在传值前 通过 <code>java.net.URLEncoder.encode(param1)</code> 编码处理后，可将转义字符转为 16 进制。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">特殊字符</th>
+<th align="center">URL 用途</th>
+<th align="center">转义方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td align="center">表示空格</td>
+<td align="center">%2B</td>
+</tr>
+<tr>
+<td align="center">空格</td>
+<td align="center">应换用加号 + 或%20 表示</td>
+<td align="center">%20</td>
+</tr>
+<tr>
+<td align="center">&#x2F;</td>
+<td align="center">分隔目录和子目录</td>
+<td align="center">%2F</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td align="center">分隔实际的 URL 和参数</td>
+<td align="center">%3F</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td align="center">指定特殊字符</td>
+<td align="center">%25</td>
+</tr>
+<tr>
+<td align="center">#</td>
+<td align="center">表示书签</td>
+<td align="center">%23</td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center">URL 中指定的参数间的分隔符</td>
+<td align="center">%26</td>
+</tr>
+<tr>
+<td align="center">&#x3D;</td>
+<td align="center">URL 中指定参数的值</td>
+<td align="center">%3D</td>
+</tr>
+<tr>
+<td align="center">!</td>
+<td align="center">URL 中指定参数的值</td>
+<td align="center">%21</td>
+</tr>
+</tbody></table>
 
                 
             </div>
@@ -583,7 +682,7 @@ sout + Tab键	System.o">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/breezeblog.gitee.io/about" rel="external nofollow noreferrer">风</a>
+                    <a href="/breezeblog.gitee.io/about" rel="external nofollow noreferrer">Breeze</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -593,7 +692,7 @@ sout + Tab键	System.o">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/2d67">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/2d67</a>
+                    <a href="https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/172e">https://breezeblog.gitee.io/breezeblog.gitee.io/breezeblog.gitee.io/posts/172e</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,7 +705,7 @@ sout + Tab键	System.o">
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/breezeblog.gitee.io/about" target="_blank">风</a>
+                    <a href="/breezeblog.gitee.io/about" target="_blank">Breeze</a>
                     !
                 </span>
             </div>
@@ -630,7 +729,11 @@ sout + Tab键	System.o">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/breezeblog.gitee.io/tags/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/">
+                                    <span class="chip bg-color">转义字符</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1118,13 +1221,13 @@ sout + Tab键	System.o">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/posts/172e">
+                <a href="/breezeblog.gitee.io/posts/a63">
                     <div class="card-image">
                         
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/5.jpg" class="responsive-img" alt="转义字符（Escape character）">
+                        <img src="/breezeblog.gitee.io/medias/featureimages/7.jpg" class="responsive-img" alt="软件工程(1)概述与软件危机">
                         
-                        <span class="card-title">转义字符（Escape character）</span>
+                        <span class="card-title">软件工程(1)概述与软件危机</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1152,8 +1255,8 @@ sout + Tab键	System.o">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/breezeblog.gitee.io/tags/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/">
-                        <span class="chip bg-color">转义字符</span>
+                    <a href="/breezeblog.gitee.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">软件工程</span>
                     </a>
                     
                 </div>
@@ -1167,12 +1270,13 @@ sout + Tab键	System.o">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/breezeblog.gitee.io/posts/70b0">
+                <a href="/breezeblog.gitee.io/posts/2d67">
                     <div class="card-image">
                         
-                        <img src="/breezeblog.gitee.io/medias/featureimages/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.jpg" class="responsive-img" alt="Java面向对象">
                         
-                        <span class="card-title">Java面向对象</span>
+                        <img src="/breezeblog.gitee.io/medias/featureimages/5.jpg" class="responsive-img" alt="iDea常用快捷键">
+                        
+                        <span class="card-title">iDea常用快捷键</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1187,23 +1291,11 @@ sout + Tab键	System.o">
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/breezeblog.gitee.io/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            风
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/breezeblog.gitee.io/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
                 </div>
                 
             </div>
